@@ -33,22 +33,48 @@
                                     <a href="index.html"><img src="img/logo/logo.png" alt="logo"></a>
                                 </div>
                             </div>
-                           <div class="col-xl-6 col-lg-6 col-md-6">
+                           <div class="col-xl-4 col-lg-4 col-md-6">
                               
                                 <div class="main-menu">
                                     <nav id="mobile-menu">
                                           <ul>
-                                            <li> <a href="#parallax">Home</a></li>
-                                            <li> <a href="#services">Services</a></li>
-                                            <li> <a href="#about">About</a></li>
-                                            <li> <a href="#work">Portfolio</a></li>
-                                            <li> <a href="#team">Team</a></li>
-                                            <li><a href="#contact">Contact</a></li>                                               
+                                            <li class="has-sub">
+                                                <a href="index.html">Home</a>
+                                                <ul>													
+													<li><a href="index.html">Home Page 01</a></li>
+													<li><a href="index-2.html">Home Page 02</a></li>													
+													<li><a href="index-3.html">Home Page 03</a></li>													
+												</ul>
+                                            </li>
+                                            <li><a href="about.html">About Us</a></li>   
+                                            <li class="has-sub"><a href="#">Pages</a>
+												<ul>     
+                                                    <li><a href="service.html">Services</a></li>
+                                                    <li> <a href="single-service.html">Services Details</a></li>
+                                                     <li><a href="projects.html">Project</a></li>
+                                                    <li><a href="team.html">Our Team</a></li>
+                                                    <li><a href="team-single.html">Team Details</a></li>  
+                                                    <li><a href="pricing.html">Pricing</a></li>
+                                                      <li><a href="faq.html">Faq</a></li>
+                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="shop-details.html">Shop Details</a></li>                                                   
+                                                  </ul>
+											</li>
+                                            <li class="has-sub"> 
+                                                <a href="blog.html">Blog</a>
+                                                <ul>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                </ul>
+                                            </li>
+
+
+                                            <li><a href="contact.html">Contact</a></li>                                               
                                         </ul>
                                     </nav>
                                 </div>
                             </div>   
-                             <div class="col-xl-4 col-lg-4 text-right d-none d-lg-block text-right text-xl-right">
+                             <div class="col-xl-6 col-lg-6 text-right d-none d-lg-block text-right text-xl-right">
                                  <div class="header-cta">
                                     <ul>
                                        <li>
@@ -61,6 +87,13 @@
                                               </div>                                            
                                           </div>
                                        </li>
+                                       <li>
+                                          <div class="call-box">                                            
+                                             <div class="text">
+                                               Best Solution ForBusiness<br> Consulting Service                           
+                                             </div>
+                                          </div>
+                                       </li>
                                         <li>
                                           <div class="call-box">                                            
                                              <div class="text">
@@ -70,7 +103,7 @@
                                        </li>
                                         <li>
                                             <div class="call-box">                          
-                                                <a href="#" class="menu-tigger">RU</a>
+                                            <a href="#" class="menu-tigger"><img src="img/bg/toggle-menu.png" alt="logo"></a>
                                             </div>
                                         </li>
                                       
@@ -87,6 +120,34 @@
             </div>
         </header>
         <!-- header-end -->
+       <!-- offcanvas-area -->
+          <div class="offcanvas-menu">
+             <span class="menu-close"><i class="fas fa-times"></i></span>
+             <form role="search" method="get" id="searchform"   class="searchform" action="http://wordpress.zcube.in/xconsulta/">
+                <input type="text" name="s" id="search" placeholder="Search"/>
+                <button><i class="fa fa-search"></i></button>
+             </form>
+             <div id="cssmenu3" class="menu-one-page-menu-container">
+                <ul  class="menu">
+                   <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.html">Home</a></li>
+                   <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="about.html">About Us</a></li>
+                   <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="courses.html">Courses</a></li>
+                   <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="pricing.html">Pricing </a></li>
+                   <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="team.html">Teacher</a></li>
+                   <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="projects.html">Gallery</a></li>
+                   <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="blog.html">Blog</a></li>
+                   <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="contact.html">Contact</a></li>
+                </ul>
+             </div>
+             <div id="cssmenu2" class="menu-one-page-menu-container">
+                <ul id="menu-one-page-menu-12" class="menu">
+                   <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#home"><span>+8 12 3456897</span></a></li>
+                   <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#howitwork"><span>info@example.com</span></a></li>
+                </ul>
+             </div>
+          </div>
+          <div class="offcanvas-overly"></div>
+          <!-- offcanvas-end -->
         <!-- main-area -->
         <main>
            <!-- slider-area -->
@@ -107,7 +168,7 @@
                                          <p data-animation="fadeInDown" data-delay=".4s">Nulla lobortis orci vel rutrum cursus. Curabitur at hendrerit libero. Curabitur bibendum eros nec augue egestas facilisis. Duis sit amet aliquet arcu, sit amet fermentum lectus.</p>    
                                     </div>
                                      <div class="slider-btn2 pl-100 mt-30">     
-                                            <a href="#contact" data-animation="fadeInLeft" data-delay=".4s">Discover Now <i class="fa-sharp fa-light fa-arrow-up"></i></a>  
+                                            <a href="contact.html" data-animation="fadeInLeft" data-delay=".4s">Discover Now <i class="fa-sharp fa-light fa-arrow-up"></i></a>  
                                         </div>        
                                 </div>
                                 <div class="col-lg-5 col-md-12 p-relative">
@@ -121,49 +182,49 @@
                
             </section>
             <!-- slider-area-end -->
-            <!-- brand-area -->
-            <div class="brand-area pt-120 wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
-                <div class="container">
-                    <div class="row brand-active">
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                <img src="img/brand/b-logo1.png" alt="img">
+              <!-- brand-area -->
+                <div class="brand-area pt-120 wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
+                    <div class="container">
+                        <div class="row brand-active">
+                            <div class="col-xl-2">
+                                <div class="single-brand">
+                                    <img src="img/brand/b-logo1.png" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                    <img src="img/brand/b-logo2.png" alt="img">
+                            <div class="col-xl-2">
+                                <div class="single-brand">
+                                     <img src="img/brand/b-logo2.png" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                    <img src="img/brand/b-logo3.png" alt="img">
+                            <div class="col-xl-2">
+                                <div class="single-brand">
+                                     <img src="img/brand/b-logo3.png" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                    <img src="img/brand/b-logo4.png" alt="img">
+                            <div class="col-xl-2">
+                                <div class="single-brand">
+                                      <img src="img/brand/b-logo4.png" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                    <img src="img/brand/b-logo5.png" alt="img">
+                            <div class="col-xl-2">
+                                <div class="single-brand">
+                                     <img src="img/brand/b-logo5.png" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                    <img src="img/brand/b-logo6.png" alt="img">
+                            <div class="col-xl-2">
+                                <div class="single-brand">
+                                     <img src="img/brand/b-logo6.png" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                    <img src="img/brand/b-logo3.png" alt="img">
+                            <div class="col-xl-2">
+                                <div class="single-brand">
+                                     <img src="img/brand/b-logo3.png" alt="img">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- brand-area-end -->        
+                <!-- brand-area-end -->        
             <!-- services-three-area -->
             <section id="services" class="services-area services-bg  p-relative fix pt-120 pb-90">  
                 <div class="container">
@@ -187,9 +248,9 @@
                                 <img src="img/icon/sr-icon1-hover.png" alt="img" class="hover">
                             </div>
                             <div class="second-services-content">
-                                <h5><a href="#">Web Design</a></h5>
+                                <h5><a href="single-service.html">Web Design</a></h5>
                                 <p>Pellentesque sit amet urna justo. Fusce velit nibh commo iaculis vestibulum condimentum.</p>
-                                <a class="btn" href="#contact">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>
+                                <a class="btn" href="single-service.html">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>
                             </div>
                                <div class="sr-h-bg">
                                <img src="img/bg/sr-h-bg.png" alt="icon"/>
@@ -203,9 +264,9 @@
                                 <img src="img/icon/sr-icon2-hover.png" alt="img" class="hover">
                             </div>
                             <div class="second-services-content">
-                                <h5><a href="#">Seo Service</a></h5>
+                                <h5><a href="single-service.html">Seo Service</a></h5>
                                <p>Pellentesque sit amet urna justo. Fusce velit nibh commo iaculis vestibulum condimentum.</p>
-                                <a class="btn" href="#contact">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>
+                                <a class="btn" href="single-service.html">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>
                             </div>
                                <div class="sr-h-bg">
                                <img src="img/bg/sr-h-bg.png" alt="icon"/>
@@ -219,9 +280,9 @@
                                 <img src="img/icon/sr-icon3-hover.png" alt="img" class="hover">
                             </div>
                             <div class="second-services-content">
-                                <h5><a href="#">Brand Design</a></h5>
+                                <h5><a href="single-service.html">Brand Design</a></h5>
                                <p>Pellentesque sit amet urna justo. Fusce velit nibh commo iaculis vestibulum condimentum.</p>
-                                <a class="btn" href="#contact">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>
+                                <a class="btn" href="single-service.html">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>
                             </div>
                                <div class="sr-h-bg">
                                <img src="img/bg/sr-h-bg.png" alt="icon"/>
@@ -235,9 +296,9 @@
                                 <img src="img/icon/sr-icon4-hover.png" alt="img" class="hover">
                             </div>
                             <div class="second-services-content">
-                                <h5><a href="#">UX/UI Design</a></h5>
+                                <h5><a href="single-service.html">UX/UI Design</a></h5>
                                <p>Pellentesque sit amet urna justo. Fusce velit nibh commo iaculis vestibulum condimentum.</p>
-                                <a class="btn" href="#contact">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>
+                                <a class="btn" href="single-service.html">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>
                             </div>
                                <div class="sr-h-bg">
                                <img src="img/bg/sr-h-bg.png" alt="icon"/>
@@ -251,9 +312,9 @@
                                 <img src="img/icon/sr-icon3-hover.png" alt="img" class="hover">
                             </div>
                             <div class="second-services-content">
-                                <h5><a href="#">Brand Design</a></h5>
+                                <h5><a href="single-service.html">Brand Design</a></h5>
                                <p>Pellentesque sit amet urna justo. Fusce velit nibh commo iaculis vestibulum condimentum.</p>
-                                <a class="btn" href="#contact">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>
+                                <a class="btn" href="single-service.html">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>
                             </div>
                                <div class="sr-h-bg">
                                <img src="img/bg/sr-h-bg.png" alt="icon"/>
@@ -354,11 +415,11 @@
                         </div>
                         <div class="grid col2 wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
 				   			 <div class="grid-item financial">
-                                    <a href="#">
+                                    <a href="single-protfolio.html">
                                     <figure class="gallery-image">
                                       <img src="img/gallery/protfolio-img01.png" alt="img" class="img">      
                                        <figcaption>
-                                           <a href="#">                            
+                                           <a href="single-protfolio.html">                            
                                             <p>Branding Design</p>
                                             <h3>Fashion Chair Design Brand</h3>
                                           </a>                                           
@@ -370,11 +431,11 @@
                                   </a>
                             </div>
                             <div class="grid-item financial banking">
-                               <a href="#">
+                               <a href="single-protfolio.html">
                                     <figure class="gallery-image">
                                      <img src="img/gallery/protfolio-img02.png" alt="img" class="img"> 
                                         <figcaption>
-                                           <a href="#">                            
+                                           <a href="single-protfolio.html">                            
                                             <p>Branding Design</p>
                                             <h3>Fashion Chair Design Brand</h3>
                                           </a>                                           
@@ -386,11 +447,11 @@
                                   </a>
                             </div>
                              <div class="grid-item insurance">
-                                    <a href="#">
+                                    <a href="single-protfolio.html">
                                     <figure class="gallery-image">
                                        <img src="img/gallery/protfolio-img03.png" alt="img" class="img">     
                                         <figcaption>
-                                           <a href="#">                            
+                                           <a href="single-protfolio.html">                            
                                             <p>Branding Design</p>
                                             <h3>Fashion Chair Design Brand</h3>
                                           </a>                                           
@@ -402,11 +463,11 @@
                                   </a>
                             </div>
                              <div class="grid-item family">
-                                    <a href="#">
+                                    <a href="single-protfolio.html">
                                     <figure class="gallery-image">
                                         <img src="img/gallery/protfolio-img04.png" alt="img" class="img">
                                         <figcaption>
-                                           <a href="#">                            
+                                           <a href="single-protfolio.html">                            
                                             <p>Branding Design</p>
                                             <h3>Fashion Chair Design Brand</h3>
                                           </a>                                           
@@ -490,6 +551,124 @@
                     </div>
                 </div>
             </section>
+            <!-- what-we-do-area-end -->
+              <!-- testimonial-area -->
+            <section id="testimonial" class="testimonial-area pb-90 p-relative fix">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-8 col-md-9">
+                                <div class="section-title p-relative text-center mb-50 wow fadeInLeft  animated" data-animation="fadeInLeft" data-delay=".4s">
+                                 <h5><span class="line"> <img src="img/bg/sub-text-logo.png" alt="circle_right"></span></h5>
+                                <h2>
+                                   What client Says?
+                                </h2>
+                                <p>Praesent ut orci sodales, cursus mauris at, fringilla mi. Quisque feugiat, libero vel pulvinar accumsan, mauris nulla malesuada dolor, at varius mauris magna nec felis. In congue elit ligula.</p>
+                            </div>
+                            </div>
+                           
+                        </div>
+                    <div class="row">                     
+                        <div class="col-lg-12">
+                            <div class="testimonial-active">
+                                <div class="single-testimonial" style="background-image: url(img/testimonial/box-bg.png); background-size: cover;">
+                                    <div class="testi-author">
+                                        <img src="img/testimonial/testi_avatar.png" alt="img">
+                                        <div class="ta-info">
+                                          <h6>IT. Isabella Theodore</h6>
+                                            <div class="review-icon">
+                                                <img src="img/testimonial/review-icon.png" alt="img">
+                                             </div>
+                                        </div>
+                                    </div>                                   
+                                    <p>Nam ultricies sed leo eget vehi. Sed variunoni magna quistoli mats. Inte tempus semper leoli rokomoni our has been lecto.</p>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                              <div class="t-logo"><img src="img/testimonial/t-logo.png" alt="img"></div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-2 text-right">                                            
+                                                <img src="img/testimonial/qt-icon.png" alt="img">                                           
+                                        </div>
+                                    </div>   
+                                </div>
+                                <div class="single-testimonial" style="background-image: url(img/testimonial/box-bg.png); background-size: cover;">
+                                    <div class="testi-author">
+                                        <img src="img/testimonial/testi_avatar_02.png" alt="img">
+                                        <div class="ta-info">
+                                          <h6>IT. Isabella Theodore</h6>
+                                            <div class="review-icon">
+                                                <img src="img/testimonial/review-icon.png" alt="img">
+                                             </div>
+                                        </div>
+                                    </div>                                   
+                                    <p>Nam ultricies sed leo eget vehi. Sed variunoni magna quistoli mats. Inte tempus semper leoli rokomoni our has been lecto.</p>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                              <div class="t-logo"><img src="img/testimonial/t-logo2.png" alt="img"></div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-2 text-right">                                            
+                                                <img src="img/testimonial/qt-icon.png" alt="img">                                           
+                                        </div>
+                                    </div>   
+                                </div>
+                                 <div class="single-testimonial" style="background-image: url(img/testimonial/box-bg.png); background-size: cover;">
+                                    <div class="testi-author">
+                                        <img src="img/testimonial/testi_avatar.png" alt="img">
+                                        <div class="ta-info">
+                                          <h6>IT. Isabella Theodore</h6>
+                                            <div class="review-icon">
+                                                <img src="img/testimonial/review-icon.png" alt="img">
+                                             </div>
+                                        </div>
+                                    </div>                                   
+                                    <p>Nam ultricies sed leo eget vehi. Sed variunoni magna quistoli mats. Inte tempus semper leoli rokomoni our has been lecto.</p>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                              <div class="t-logo"><img src="img/testimonial/t-logo.png" alt="img"></div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-2 text-right">                                            
+                                                <img src="img/testimonial/qt-icon.png" alt="img">                                           
+                                        </div>
+                                    </div>   
+                                </div>
+                                <div class="single-testimonial" style="background-image: url(img/testimonial/box-bg.png); background-size: cover;">
+                                    <div class="testi-author">
+                                        <img src="img/testimonial/testi_avatar_02.png" alt="img">
+                                        <div class="ta-info">
+                                          <h6>IT. Isabella Theodore</h6>
+                                            <div class="review-icon">
+                                                <img src="img/testimonial/review-icon.png" alt="img">
+                                             </div>
+                                        </div>
+                                    </div>                                   
+                                    <p>Nam ultricies sed leo eget vehi. Sed variunoni magna quistoli mats. Inte tempus semper leoli rokomoni our has been lecto.</p>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                              <div class="t-logo"><img src="img/testimonial/t-logo2.png" alt="img"></div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-2 text-right">                                            
+                                                <img src="img/testimonial/qt-icon.png" alt="img">                                           
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+            <!-- testimonial-area-end -->
           <!-- video-area -->
             <section id="video" class="video-area pt-150 pb-150 p-relative" style="background-image:url(img/bg/vedio-img.png); background-repeat: no-repeat; background-position: center bottom; background-size:cover;">
                 <div class="animations-01"><img src="img/bg/an-img-01.png" alt="an-img-01"></div>
@@ -545,7 +724,7 @@
                                          <img src="img/team/team01.jpg" alt="img">                                        
                                     </div>
                                      <div class="team-info">                                         
-                                        <h4><a href="#">H.Alexander Anna</a></h4>
+                                        <h4><a href="team-single.html">H.Alexander Anna</a></h4>
                                          <p>Managing Director</p>
                                             <div class="team-social">
                                                  <a href="#" class="share-alt"><i class="fal fa-share-alt"></i></a>
@@ -568,7 +747,7 @@
                                         <img src="img/team/team02.jpg" alt="img">                                        
                                     </div> 
                                     <div class="team-info">                                         
-                                        <h4><a href="#">Elizabeth Joseph</a></h4>
+                                        <h4><a href="team-single.html">Elizabeth Joseph</a></h4>
                                          <p>Managing Director</p>
                                             <div class="team-social">
                                                  <a href="#" class="share-alt"><i class="fal fa-share-alt"></i></a>
@@ -591,7 +770,7 @@
                                         <img src="img/team/team03.jpg" alt="img">                                        
                                     </div>
                                     <div class="team-info">                                         
-                                        <h4><a href="#">Benjamin Evelyn</a></h4>
+                                        <h4><a href="team-single.html">Benjamin Evelyn</a></h4>
                                         <p>Designer</p>
                                         <div class="team-social">
                                                  <a href="#" class="share-alt"><i class="fal fa-share-alt"></i></a>
@@ -614,7 +793,7 @@
                                          <img src="img/team/team04.jpg" alt="img">                                      
                                     </div>
                                     <div class="team-info">                                        
-                                        <h4><a href="#">Jack Martin</a></h4>
+                                        <h4><a href="team-single.html">Jack Martin</a></h4>
                                          <p>Designer</p>
                                         <div class="team-social">
                                                  <a href="#" class="share-alt"><i class="fal fa-share-alt"></i></a>
@@ -638,7 +817,7 @@
                                          <img src="img/team/team01.jpg" alt="img">                                       
                                     </div>
                                      <div class="team-info">                                         
-                                        <h4><a href="#">Kristal Leo</a></h4>
+                                        <h4><a href="team-single.html">Kristal Leo</a></h4>
                                          <p>Designer</p>
                                          <div class="team-social">
                                                  <a href="#" class="share-alt"><i class="fal fa-share-alt"></i></a>
@@ -659,160 +838,162 @@
                    
                 </div>
             </section>
-
-            <section id="contact" class="team-area fix p-relative pb-90">  
-                <div class="container">  
-                    
-                   <div class="row justify-content-center align-items-center">
-                        <div class="col-lg-8 col-md-9">
-                            <div class="section-title p-relative text-center mb-50 wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+            <!-- team-area-end --> 
+             <!-- cta-area -->
+            <section class="cta-area cta-bg2" >
+                <div class="container pt-75 pb-75 pl-60 pr-60" style="background-image:url(img/bg/cta_bg02.png); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title cta-title wow fadeInLeft animated" data-animation="fadeInDown animated" data-delay=".2s">
+                                <h2>Get Started and grow your business now.</h2>
+                            </div>
+                                             
+                        </div>
+                        <div class="col-lg-4 text-right"> 
+                            <div class="cta-btn s-cta-btn wow fadeInRight animated mt-30" data-animation="fadeInDown animated" data-delay=".2s">
+									  <a href="about.html" class="btn ss-btn smoth-scroll">Get Started For free <i class="fa-sharp fa-light fa-arrow-up"></i></a>			
+								</div>
+                        </div>
+					
+                    </div>
+                </div>
+            </section>
+            <!-- cta-area-end -->	
+             <!-- blog-area -->
+            <section id="blog" class="blog-area p-relative fix pt-120 pb-90">
+                <div class="container">
+                      <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-8 col-md-9">
+                                <div class="section-title p-relative text-center mb-50 wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
                                  <h5><span class="line"> <img src="img/bg/sub-text-logo.png" alt="circle_right"></span></h5>
                                 <h2>
-                                  Contact Us
+                                  Special Team Member
                                 </h2>
+                                <p>Praesent ut orci sodales, cursus mauris at, fringilla mi. Quisque feugiat, libero vel pulvinar accumsan, mauris nulla malesuada dolor, at varius mauris magna nec felis. In congue elit ligula.</p>
                             </div>
+                            </div>
+                           
                         </div>
-                    </div>
-                </div>
-            </section>
-            <!-- team-area-end --> 
-            <div class="map pt-120 fix">
-                <div class="container">
-                    
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <img src="img/bg/map.png" alt="logo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section id="contact" class="contact-area after-none contact-bg pt-120 pb-120 p-relative">
-                
-                <div class="container">
-             
-					<div class="row">
-                        <div class="col-lg-8">
-                            <div class="contact-bg02">
-                            <div class="section-title mb-50">
-                                <h2>
-                                  Get in touch with Us
-                                </h2>
-                               
-                            </div>
-                             
-						<form action="mail.php" method="post" class="contact-form mt-30">
-							<div class="row">
-                            <div class="col-lg-6">
-                                <div class="contact-field p-relative c-name mb-30">                                    
-                                    <input type="text" id="firstn" name="firstn" placeholder="First Name" required>
-                                </div>                               
-                            </div>
-							<div class="col-lg-6">                               
-                                <div class="contact-field p-relative c-email mb-20">                                    
-                                    <input type="text" id="lastn" name="lastn" placeholder="Last Name" required>
-                                </div>                                
-                            </div>
-							<div class="col-lg-6">                               
-                                <div class="contact-field p-relative c-subject mb-30">                                   
-                                    <input type="text" id="email" name="email" placeholder="Eamil" required>
+                        <div class="row justify-content-center align-items-center single-post3">
+                            <div class="col-lg-1 col-md-1">
+                                <div class="date-home">
+                                   21 Aug 2023
                                 </div>
-                            </div>		
-                            <div class="col-lg-6">                               
-                                <div class="contact-field p-relative c-subject mb-30">                                   
-                                    <input type="text" id="phone" name="phone" placeholder="Phone No." required>
+                            </div>
+                            <div class="col-lg-2 col-md-2 text-center">
+                                <a href="blog-details.html"><img src="img/blog/inner_b4.png" alt="img"></a>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                 <div class="blog-content3">    
+                                    <p>Web Design</p>
+                                    <h4><a href="blog-details.html">In-house vs Agency Marketing Four Things to Consider</a></h4>                                    
                                 </div>
-                            </div>	
-                            <div class="col-lg-12">                               
-                                <div class="contact-field p-relative c-subject mb-30">                                   
-                                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                                </div>
-                            </div>	
-                             
-                            <div class="col-lg-12">
-                                <div class="contact-field p-relative c-message mb-30">                                  
-                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write comments"></textarea>
-                                </div>
-                                                     
                             </div>
-                            <div class="col-lg-12">
-                                <p> * Call us 24/7  or fill out the form below to receive a free.</p>
-                            </div>
-                            <div class="col-lg-12">
-                               <div class="slider-btn  text-center">                                          
-                                    <button class="btn ss-btn active" data-animation="fadeInRight" data-delay=".8s">Send Message <i class="fa-sharp fa-light fa-arrow-up"></i></button>				
-                                </div>        
-                            </div>
-                            </div>
-                        
-                    </form>
-                            
-                            </div>
-                        
-						</div>
-                        <div class="col-lg-4">
-                         <div class="contact-info">
-                             <ul>
-                                <li>
-                                    <div class="single-cta">
-                                        <div class="f-cta-icon">
-                                           <img src="img/icon/c-icon1.png" alt="logo">
+                             <div class="col-lg-3 col-md-3 text-center">
+                                <div class="b-meta">
+                                        <div class="meta-info">
+                                            <ul>
+                                                <li><i class="fal fa-user"></i> By Mohd Subhan </li>
+                                                <li></li>
+                                            </ul>
                                         </div>
-                                        <div class="text">
-                                             <p>Contact Phone</p>
-                                            <h5>+55 (9900) 666 22</h5>                                           
-                                        </div>
-                                    </div> 
-                                </li>
-                                <li>
-                                      <div class="single-cta">
-                                        <div class="f-cta-icon">
-                                           <img src="img/icon/c-icon2.png" alt="logo">
-                                        </div>
-                                        <div class="text">
-                                             <p>Contact Location</p>
-                                            <h5>14/4, Bonosri, Road A, USA.</h5>                                           
-                                        </div>
-                                    </div> 
-                                 </li>
-                                  <li>
-                                     <div class="single-cta">
-                                        <div class="f-cta-icon">
-                                           <img src="img/icon/c-icon3.png" alt="logo">
-                                        </div>
-                                        <div class="text">
-                                             <p>Contact Phone</p>
-                                            <h5>info.mirpur@gmail.com</h5>                                           
-                                        </div>
-                                    </div> 
-                                 </li>
-                                 <li>
-                                    <div class="single-cta">
-                                        <div class="f-cta-icon">
-                                           <img src="img/icon/c-icon4.png" alt="logo">
-                                        </div>
-                                        <div class="text">
-                                             <p>Office Time</p>
-                                            <h5>Office open 10AM - 17PM</h5>                                           
-                                        </div>
-                                    </div> 
-                                 </li>
-                                 <li>
-                                     <div class="footer-social">                                    
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest"></i></a>
                                     </div>
-                                 </li>
-                             </ul>
                             </div>
-                    </div>
-                    
-					</div>
+                            <div class="col-lg-2 col-md-2">
+                               <a href="about.html" class="btn ss-btn smoth-scroll">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>		
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center single-post3">
+                            <div class="col-lg-1 col-md-1">
+                                <div class="date-home">
+                                   21 Aug 2023
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 text-center">
+                                <a href="blog-details.html"><img src="img/blog/inner_b5.png" alt="img"></a>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                 <div class="blog-content3">    
+                                    <p>Web Design</p>
+                                    <h4><a href="blog-details.html">In-house vs Agency Marketing Four Things to Consider</a></h4>                                    
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-3 text-center">
+                                <div class="b-meta">
+                                        <div class="meta-info">
+                                            <ul>
+                                                <li><i class="fal fa-user"></i> By Mohd Subhan </li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                               <a href="about.html" class="btn ss-btn smoth-scroll">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>		
+                            </div>
+                        </div>
+                    <div class="row justify-content-center align-items-center single-post3">
+                            <div class="col-lg-1 col-md-1 col-sm-1">
+                                <div class="date-home">
+                                   21 Aug 2023
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 text-center">
+                                <a href="blog-details.html"><img src="img/blog/inner_b6.png" alt="img"></a>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                 <div class="blog-content3">    
+                                    <p>Web Design</p>
+                                    <h4><a href="blog-details.html">In-house vs Agency Marketing Four Things to Consider</a></h4>                                    
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-3 text-center">
+                                <div class="b-meta">
+                                        <div class="meta-info">
+                                            <ul>
+                                                <li><i class="fal fa-user"></i> By Mohd Subhan </li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                               <a href="about.html" class="btn ss-btn smoth-scroll">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>		
+                            </div>
+                        </div>
+                    <div class="row justify-content-center align-items-center single-post3">
+                            <div class="col-lg-1 col-md-1">
+                                <div class="date-home">
+                                   21 Aug 2023
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 text-center">
+                                <a href="blog-details.html"><img src="img/blog/inner_b7.png" alt="img"></a>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                 <div class="blog-content3">    
+                                    <p>Web Design</p>
+                                    <h4><a href="blog-details.html">In-house vs Agency Marketing Four Things to Consider</a></h4>                                    
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-3 text-center">
+                                <div class="b-meta">
+                                        <div class="meta-info">
+                                            <ul>
+                                                <li><i class="fal fa-user"></i> By Mohd Subhan </li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                               <a href="about.html" class="btn ss-btn smoth-scroll">Read More <i class="fa-sharp fa-light fa-arrow-up"></i></a>		
+                            </div>
+                        </div>
                     
                 </div>
-               
             </section>
+            <!-- blog-area-end -->
            
         </main>
         <!-- main-area-end -->
@@ -827,6 +1008,14 @@
                                 <div class="f-widget-title mb-100">
                                    <img src="img/logo/logo.png" alt="img">
                                 </div>
+                                 <div class="footer-subricbe p-relative" data-animation="fadeInDown" data-delay=".4s" >
+                                     <h6>Get Contact</h6>
+                                    <form action="news-mail.php" method="post" class="contact-form ">
+                                    <button class="btn"><img src="img/bg/sbtn-icon.png" alt="img"></button>
+                                     <input type="text" id="email2" name="email2"  class="header-input" placeholder="Info.meika@gmail.com" required>
+                                    
+                                    </form>
+                                </div>
                                 <div class="info">
                                     <ul>
                                         <li><span class="red">P:</span> +99 88 55 666 000</li>
@@ -838,7 +1027,7 @@
 						<div class="col-xl-2 col-lg-2 col-sm-6">
                             <div class="footer-widget mb-30">
                                 <div class="f-widget-title">
-                                    <h2>Follow Us</h2>
+                                    <h2>Follow Me</h2>
                                 </div>
                                 <div class="footer-link">
                                     <ul>                                        
@@ -857,7 +1046,7 @@
                                 </div>
                                 <div class="footer-link">
                                     <ul>
-                                        <li><a href="#about">About</a></li>
+                                        <li><a href="faq.html">About</a></li>
                                         <li><a href="#">Careers</a></li>
                                         <li><a href="#">Terms of service</a></li>
                                         <li><a href="#">We’re Hiring</a></li>
@@ -874,7 +1063,7 @@
                                 </div>
                                 <div class="footer-link">
                                     <ul>
-                                        <li><a href="#contact"> Contact Us</a></li>
+                                        <li><a href="faq.html"> Contact Us</a></li>
                                         <li><a href="#">Team Member</a></li>
                                         <li><a href="#">Latest Portfolio</a></li>
                                         <li><a href="#">Shop Page</a></li>
