@@ -1,0 +1,8 @@
+logo: 150x30
+logo mini: 57x32
+services icon: 125x108
+about_img: 456x519
+potfolio: 442x317
+about_img2: 456x468
+team: 255x283
+logo client: height  90px
