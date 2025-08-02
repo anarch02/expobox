@@ -184,7 +184,7 @@ color:  #df2919;
 .dark .s-slider-content p{
 font-size: 16px;
 color: #9C9C9C;
-padding-left: 100px;
+padding-left: 0px;
 }
 .dark .content-lines-inner{
     border-left: 1px solid #ffffff2e;
@@ -3013,12 +3013,12 @@ box-shadow: none;
 .second-services-content h5 {
 transition: .3s;
   letter-spacing: 0;
-  font-size: 32px;
+  font-size: 24px;
   color: #fff;
   margin-bottom: 20px;
 }
 .second-services-content p {
-	margin-bottom: 45px;
+	margin-bottom: 5px;
 }
 .second-services-content a {
 	/*font-size: 14px;
@@ -12555,4 +12555,12 @@ color: #fff;
 }
 .scrollbox2 {
     position: relative;
+}
+
+
+.about_subtext {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    line-height: 1.6;
 }
