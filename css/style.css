@@ -1416,7 +1416,7 @@ font-size: 16px;
 }
 
 .call-box .text{
-width: 230px;
+width: 250px;
     font-size: 16px;
   font-weight: 600;
 }
@@ -2114,7 +2114,7 @@ bottom: 5px;
 	margin-bottom: 30px;
 }
 .about-title h2 {
-	font-size: 52px;
+	font-size: 50px;
     margin-bottom: 0 !important;
 }
 .pline{
@@ -3054,6 +3054,7 @@ transition: .3s;
 .services-active .s-single-services{
     margin-left: 10px;
     margin-right: 10px;
+    min-height: 690px;
     overflow: hidden;
 }
 .second-services-content h3 a{
@@ -12559,8 +12560,11 @@ color: #fff;
 
 
 .about_subtext {
-    font-size: 16px;
-    color: #fff;
-    margin: 0;
-    line-height: 1.6;
+    margin-left: 220px;
+}
+
+@media (max-width: 991px) {
+    .about_subtext {
+        margin-left: 0;
+    }
 }
