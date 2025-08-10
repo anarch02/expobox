@@ -734,15 +734,16 @@ $.scrollUp({
 
 // isotop
 	$('.grid').imagesLoaded(function () {
-	// init Isotope
-	var $grid = $('.grid').isotope({
-	  itemSelector: '.grid-item',
-	  percentPosition: true,
-	  masonry: {
-		// use outer width of grid-sizer for columnWidth
-		columnWidth: 1
-	  }
-	});
+		 // init Isotope (по умолчанию показывать только .01)
+		 var $grid = $('.grid').isotope({
+			 itemSelector: '.grid-item',
+			 percentPosition: true,
+			 filter: '.01',
+			 masonry: {
+				 // use outer width of grid-sizer for columnWidth
+				 columnWidth: 1
+			 }
+		 });
 
 	// filter items on button click
 	$('.button-group').on('click', 'button', function () {

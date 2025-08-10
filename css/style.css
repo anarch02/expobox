@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../fonts/SF-Pro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 /* CSS Index
 -----------------------------------
 1. Theme default css
@@ -23,18 +30,18 @@
 
 */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* 1. Theme default css */
  body {
-           font-family: 'DM Sans', sans-serif;
+  font-family: 'SF Pro', sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	color: #9C9C9C;
 	font-style: normal;
-     line-height: 26px;
-     background: #222327;
-      position: relative;
-     background: url('../img/slider/line-bg.png') no-repeat;
-     
+  line-height: 26px;
+  background: #222327;
+    position: relative;
+  background: url('../img/slider/line-bg.png') no-repeat;
 }
 a, .btn, button, span, p, i, input, select, textarea, li, img, svg path, ::after, ::before, .transition-3, h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all .3s ease-out 0s;
@@ -389,7 +396,7 @@ h3,
 h4,
 h5,
 h6 {
-     font-family: 'Inter', sans-serif;
+     font-family: 'SF Pro', sans-serif;
 	color: #000000;
 	margin-top: 0px;
 	font-style: normal;
@@ -511,7 +518,7 @@ position: relative;
 z-index: 1;
 background: #df2919;
 border: none;
-font-family: 'Inter', sans-serif;
+font-family: 'SF Pro', sans-serif;
 font-weight: 500;
 text-transform: capitalize;
 overflow: hidden;
@@ -557,7 +564,7 @@ margin-left: 0px;
     margin-right: 10px;
 }
 .slider-btn2 a{
- font-family: Inter;
+ font-family: SF Pro;
 font-size: 14px;
 font-weight: 700; 
     color: #fff;
@@ -770,7 +777,7 @@ top: -3px;
     font-weight:500;
 	position: relative;
     font-size: 16px;
-        font-family: 'Inter', sans-serif;
+        font-family: 'SF Pro', sans-serif;
 }
 .main-menu ul li a::after {
   content: "+";
@@ -888,7 +895,7 @@ margin-right: -12px;
  color: #df2919;
 font-size: 22px;
 font-weight: 600;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SF Pro', sans-serif;
 }
 .menu-search{
     padding: 10px 22px 10px 0;
@@ -910,7 +917,7 @@ color: #000000;
     width: 100%;
     float: left;
     color: #fff;
-        font-family: 'Inter', sans-serif;
+        font-family: 'SF Pro', sans-serif;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -1208,7 +1215,7 @@ z-index: 9;
 }
 
 .header-three .main-menu ul li a {
-            font-family: 'Inter', sans-serif;
+            font-family: 'SF Pro', sans-serif;
 }
 .header-three .main-menu .sub-menu li a,.menu .children li a {
     color: #4f4f4f !important;
@@ -1270,7 +1277,7 @@ float: right;
 .slider-four .slider-bg .text2 h5 {
     color: #df2919;
     font-size: 18px;
-               font-family: 'Inter', sans-serif;
+               font-family: 'SF Pro', sans-serif;
     font-weight: 500;
 }
 
@@ -1426,7 +1433,7 @@ width: 250px;
 .call-box strong {
 font-size: 20px;
 color: #1b2336;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SF Pro', sans-serif;
 }
 .call-box .sc{
     width: 100px;
@@ -1556,7 +1563,7 @@ color: #fff;
     font-weight: 600;
     font-size: 16px;
     color: #fff;
-        font-family: 'Inter', sans-serif;
+        font-family: 'SF Pro', sans-serif;
 }
 .slider-bg .video-i.popup-video img {
     display: inline-block;
@@ -2091,7 +2098,7 @@ color: #000;
 position: relative;
 display: inline-block;
 font-weight: 600;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SF Pro', sans-serif;
 margin-top: 15px;
 }
 .about-text span sub {
@@ -2122,7 +2129,7 @@ color: #9C9C9C;
   padding-bottom: 25px;
   border-bottom: 1px solid #FFFFFF1A;
   font-size: 18px;
-  font-family: Inter;
+  font-family: SF Pro;
   font-weight: 600;
   margin-bottom: 25px !important;
 }
@@ -2373,7 +2380,7 @@ margin-bottom: 0;
 color: #000;
 font-size: 14px;
 font-weight: 600;
-font-family: 'Inter', sans-serif;
+font-family: 'SF Pro', sans-serif;
 margin-top: 0;
 }
 .second-atitle > span {
@@ -2413,13 +2420,13 @@ color: #fff;
 .sinature-box h2{
     font-size: 20px;
     font-weight: 500;
-               font-family: 'Inter', sans-serif;
+               font-family: 'SF Pro', sans-serif;
     color: #000000;
     margin-bottom: 5px;
 }
 .sinature-box h3{
     font-size: 14px;
-               font-family: 'Inter', sans-serif;
+               font-family: 'SF Pro', sans-serif;
     color: #4CC3C1;
 }
 .sinature-box .user-box{
@@ -2470,7 +2477,9 @@ padding-left: 0;
 }
 .about-content2 .abcontent {
   display: flex;
+  height: 100px;
 }
+
 .about-content2 li .ano {
 font-size: 20px;
   width: 50px;
@@ -2488,9 +2497,22 @@ font-size: 20px;
 .about-content2 li .text {
   padding-top: 5px;
 }
+
+.about-content2 li p {
+  
+}
+
 .about-content2 li .text h3 {
   font-size: 24px;
 }
+.about-content2 li .text span {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
 .about-content .btn{
     padding: 23px 30px;
     background: none;
@@ -2514,7 +2536,7 @@ font-size: 60px;
 color: #df2919;
 position: relative;
 font-weight: 600;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SF Pro', sans-serif;
 margin-top: 15px;
 float: left;
 margin-right: 15px;
@@ -3481,13 +3503,13 @@ text-decoration: underline;
 .services-07 .user-box .text h2 {
     font-size: 24px;
     font-weight: 500;
-               font-family: 'Inter', sans-serif;
+               font-family: 'SF Pro', sans-serif;
     color: #fff;
     margin-bottom: 5px;
 }
 .services-07 .user-box .text h3 {
     font-size: 14px;
-               font-family: 'Inter', sans-serif;
+               font-family: 'SF Pro', sans-serif;
     color: #9a9fa2;
 }
 
@@ -3652,7 +3674,7 @@ border: 2px solid #df2919;
 }
 .simple-services-area .btn{
     background: none;
-    font-family: Inter;
+    font-family: SF Pro;
     font-size: 16px;
     font-weight: 700; 
     border: 1px solid #FFFFFF1A;
@@ -3919,7 +3941,7 @@ border-top: 1px solid #df2919;
 .step-box .date-box span {
   width: 90%;
     font-size: 28px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SF Pro', sans-serif;
 }
 .step-img {
   margin-left: -315px;
@@ -4274,7 +4296,7 @@ margin-bottom: 20px;
     margin-right: 25px;
     position: relative;
     border: 2px solid #1f53db;
-        font-family: 'Inter', sans-serif;
+        font-family: 'SF Pro', sans-serif;
 }
 .choose-btn a .icon {
     padding: 0 20px 0 0;
@@ -5052,7 +5074,7 @@ top: 36px;
 }
 .count,.counter span{
 color: var(--FFFFFF, #FFF);
-font-family: Inter;
+font-family: SF Pro;
 font-size: 52px;
 font-style: normal;
 font-weight: 300;
@@ -5143,7 +5165,7 @@ width: 98px;
 height: 34px;
 text-align: center;
 font-weight: 600;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SF Pro', sans-serif;
 margin-top: 5px;
 }
 .class-tech {
@@ -5388,6 +5410,10 @@ line-height: 34px;
   width: 90%;
   margin: auto;
   padding: 30px;
+}
+
+.single-testimonial p {
+  min-height: 180px;
 }
 
 .testimonial-nav .slick-list {
@@ -5821,7 +5847,7 @@ padding-right: 75px;
 background: #181818;
     color: #fff;
 border-radius: 0;
-    font-family: Inter; 
+    font-family: SF Pro; 
 }
 .card .collapse.show {
     display: block;
@@ -6568,7 +6594,7 @@ margin-top: 0;
 }
 .pricing-box2 .price-count h2 {
 color: #FFF;
-  font-family: Inter;
+  font-family: SF Pro;
   font-size: 52px;
   font-style: normal;
   font-weight: 400 !important;
@@ -6719,7 +6745,7 @@ border: 1px solid #f8f8f8;
 /* 20. footer */
 .footer-subricbe h6{
         color: var(--9C9C9C, #9C9C9C);
-font-family: Inter;
+font-family: SF Pro;
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
@@ -6746,12 +6772,12 @@ display: flex;
     border: none;
     padding: 0;
     color: #9c9c9c;
-    font-family: Inter;
+    font-family: SF Pro;
 font-size: 32px;
     font-weight: 700;
 }
 .footer-subricbe .header-input::placeholder {
-font-family: Inter;
+font-family: SF Pro;
 font-size: 32px;
 font-style: normal;
 font-weight: 700;
@@ -9532,7 +9558,7 @@ color: #df2919;
 font-size: 26px;
 font-weight: 600;
 transition: 0.3s;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SF Pro', sans-serif;
 }
 .service-details-three h2 {
   color: #fff;
@@ -10264,7 +10290,7 @@ text-transform: uppercase;
 .features-area .nav-pills .nav-link{
     width: 100%;
     font-size: 24px;
-            font-family: 'Inter', sans-serif;
+            font-family: 'SF Pro', sans-serif;
     font-weight: 600;
 }
 .features-area .nav-pills .nav-link img{
@@ -10416,7 +10442,7 @@ font-size: 18px;
 font-weight: 600;
 margin: 0px 0 15px;
 color: #000;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SF Pro', sans-serif;
     
 }
 .skill-bar {
@@ -11125,7 +11151,7 @@ color: #bcbcbc;
 }
 .widget__banner-overly h3 span {
 	display: block;
-	    font-family: 'Inter', sans-serif;
+	    font-family: 'SF Pro', sans-serif;
 	font-size: 30px;
 	font-weight: 300;
 }
@@ -11449,7 +11475,7 @@ overflow: hidden;
 code {
     font-size: 15px;
     display: inline-block;
-               font-family: 'Inter', sans-serif;
+               font-family: 'SF Pro', sans-serif;
     margin-top: 10px;
 }
 figcaption{
@@ -11916,7 +11942,7 @@ div.single-cta:last-child {
     font-weight: 600;
     font-size: 24px;
     color: #000000;
-               font-family: 'Inter', sans-serif;
+               font-family: 'SF Pro', sans-serif;
 }
 .aw-line{
 position: relative;
@@ -12567,4 +12593,265 @@ color: #fff;
     .about_subtext {
         margin-left: 0;
     }
+}
+
+/* Стили для увеличения размера модального окна галереи до 80-90% экрана */
+        
+        /* Основной контейнер модального окна */
+        .mfp-img-container {
+            padding: 20px !important;
+            text-align: center !important;
+        }
+        
+        /* Изображение в модальном окне - БОЛЕЕ АГРЕССИВНЫЕ ПРАВИЛА */
+        .mfp-img-container .mfp-img {
+            max-width: 90vw !important;
+            max-height: 85vh !important;
+            width: auto !important;
+            height: auto !important;
+            padding: 0 !important;
+            margin: 0 auto !important;
+            display: block !important;
+        }
+        
+        /* Дополнительные правила для принудительного изменения размера */
+        .mfp-zoom-in .mfp-img {
+            max-width: 90vw !important;
+            max-height: 85vh !important;
+            width: auto !important;
+            height: auto !important;
+        }
+        
+        /* Контейнер с фигурой */
+        .mfp-figure:after {
+            top: 20px !important;
+            bottom: 20px !important;
+        }
+        
+        /* Контейнер с изображением */
+        .mfp-figure {
+            margin: 0 !important;
+        }
+        
+        /* Заголовок изображения */
+        .mfp-title {
+            text-align: center;
+            padding: 15px 0 0 0 !important;
+            color: #fff !important;
+            font-size: 16px !important;
+        }
+        
+        /* Фон модального окна */
+        .mfp-bg {
+            background: rgba(0, 0, 0, 0.9) !important;
+        }
+        
+        /* Контейнер модального окна */
+        .mfp-container {
+            padding: 20px !important;
+        }
+        
+        /* Кнопки навигации */
+        .mfp-arrow {
+            width: 60px !important;
+            height: 60px !important;
+            margin-top: -30px !important;
+        }
+        
+        .mfp-arrow-left {
+            left: 20px !important;
+        }
+        
+        .mfp-arrow-right {
+            right: 20px !important;
+        }
+        
+        /* Кнопка закрытия */
+        .mfp-close {
+            top: 20px !important;
+            right: 20px !important;
+            width: 44px !important;
+            height: 44px !important;
+            font-size: 24px !important;
+        }
+        
+        /* Счетчик изображений */
+        .mfp-counter {
+            top: 20px !important;
+            right: 80px !important;
+            color: #fff !important;
+            font-size: 14px !important;
+        }
+        
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            .mfp-img-container .mfp-img {
+                max-width: 95% !important;
+                max-height: 80% !important;
+            }
+            
+            .mfp-container {
+                padding: 10px !important;
+            }
+            
+            .mfp-arrow {
+                width: 44px !important;
+                height: 44px !important;
+                margin-top: -22px !important;
+            }
+            
+            .mfp-arrow-left {
+                left: 10px !important;
+            }
+            
+            .mfp-arrow-right {
+                right: 10px !important;
+            }
+            
+            .mfp-close {
+                top: 10px !important;
+                right: 10px !important;
+                width: 40px !important;
+                height: 40px !important;
+            }
+            
+            .mfp-counter {
+                top: 10px !important;
+                right: 60px !important;
+                font-size: 12px !important;
+            }
+        }
+        
+        /* Дополнительные стили для улучшения отображения */
+        .mfp-zoom-in .mfp-with-anim {
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            transform: scale(0.8);
+        }
+        
+        .mfp-zoom-in.mfp-bg {
+            opacity: 0;
+            transition: all 0.3s ease-out;
+        }
+        
+        .mfp-zoom-in.mfp-ready .mfp-with-anim {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .mfp-zoom-in.mfp-ready.mfp-bg {
+            opacity: 0.9;
+        }
+        
+        .mfp-zoom-in.mfp-removing .mfp-with-anim {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+        
+        .mfp-zoom-in.mfp-removing.mfp-bg {
+            opacity: 0;
+        }
+
+        .about-img-bg {
+            width: 70vw;
+            max-width: 100vw;
+            height: auto;
+            display: block;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+/* Контейнер */
+.custom-skill-box {
+    position: relative;
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Левая верхняя точка */
+.custom-skill-box .dot-top-left {
+    position: absolute;
+    top: 10px;
+    left: 45%;
+    transform: translateX(-120px);
+    width: 19px;
+    height: 19px;
+    border-radius: 2px;
+    background-color: #DF2919;
+    z-index: 2;
+}
+
+/* Правая нижняя точка */
+.custom-skill-box .dot-bottom-right {
+    position: absolute;
+    bottom: 13px;
+    left: 53%;
+    transform: translateX(101px);
+    width: 19px;
+    height: 19px;
+    border-radius: 2px;
+    background-color: #DF2919;
+    z-index: 2;
+}
+
+/* Внутренний контейнер */
+.custom-skill-box .inner-box {
+    position: relative;
+    left: 0;
+    width: 239px;
+    height: 285px;
+    margin: 20px 0;
+}
+
+/* Стеклянный фон */
+.custom-skill-box .glass-bg {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Контент */
+.custom-skill-box .content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.custom-link {
+    color: #DF2919;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* повернуть стрелку немножко в право */
+.custom-arrow {
+    color: #DF2919;
+    font-size: 20px;
+    font-weight: initial;
+    margin: 0;
+    transform: rotate(50deg);
+}
+
+.icon-img-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
