@@ -416,8 +416,6 @@
                                     <figure class="gallery-image">
                                         <img src="img/gallery/02-1.png" alt="img" class="img">      
                                     </figure>
-                                </a>
-                            </div>
                             <div class="grid-item 02">
                                 <a href="img/gallery/02-2.png" class="gallery-link" title="Проект 2-2">
                                     <figure class="gallery-image">
@@ -939,5 +937,24 @@
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/element-in-view.js"></script>
         <script src="js/main.js"></script></script>
+
+        <script>
+        $(function() {
+        if ($.fn.magnificPopup) {
+            $('.grid').magnificPopup({
+            delegate: 'a.gallery-link',
+            type: 'image',
+            gallery: {
+                enabled: true
+            },
+            image: {
+                titleSrc: 'title'
+            }
+            });
+        } else {
+            console.error('magnificPopup не найден!');
+        }
+        });
+        </script>
     </body>
 </html>
