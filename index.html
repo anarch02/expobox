@@ -21,11 +21,19 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
 
-        <!-- 
-        35 - 210
-        15 - 90
-        50 - 300
-          -->
+        <!-- ===== СТИЛИ ДЛЯ АКТИВНОГО ЯЗЫКА ===== -->
+        <style>
+            .lang-switcher {
+                cursor: pointer;
+                transition: color 0.3s ease;
+            }
+            .lang-switcher.active {
+                color: #df2919;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+        </style>
+
     </head>
     <body class="dark">
 
@@ -44,11 +52,11 @@
                                 <div class="main-menu">
                                     <nav id="mobile-menu">
                                           <ul>
-                                            <li> <a href="#parallax">Главная</a></li>
-                                            <li> <a href="#services">Услуги</a></li>
-                                            <li> <a href="#about">О нас</a></li>
-                                            <li> <a href="#team">Команда</a></li>
-                                            <li><a href="#contact">Контакты</a></li>
+                                            <li> <a href="#parallax" data-lang-key="nav_home">Главная</a></li>
+                                            <li> <a href="#services" data-lang-key="nav_services">Услуги</a></li>
+                                            <li> <a href="#about" data-lang-key="nav_about">О нас</a></li>
+                                            <li> <a href="#team" data-lang-key="nav_team">Команда</a></li>
+                                            <li><a href="#contact" data-lang-key="nav_contacts">Контакты</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -59,14 +67,14 @@
                                        <li>
                                           <div class="call-box">
                                               <div class="sc">
-                                                 <span>Рус.</span><br>
-                                                 <span>Eng.</span>
+                                                 <span class="lang-switcher" id="lang-ru">Рус.</span>
+                                                 <span class="lang-switcher" id="lang-en">Eng.</span>
                                               </div>                                            
                                           </div>
                                        </li>
                                        <li>
                                           <div class="call-box">                                            
-                                             <div class="text">
+                                             <div class="text" data-lang-key="header_slogan">
                                                Воплощаем идеи с помощью <br>умного дизайна и конструкций                           
                                              </div>
                                           </div>
@@ -74,7 +82,7 @@
                                         <li>
                                           <div class="call-box">                                            
                                              <div class="text">
-                                             P: +998 95 325 05 25<br> E: expobox@gmail.com             
+                                             P: <a href="tel:+998953250525">+998 95 325 05 25</a><br> E: <a href="mailto:expobox@gmail.com">expobox@gmail.com</a>             
                                              </div>
                                           </div>
                                        </li>
@@ -106,12 +114,12 @@
                            <div class="row mt-200">                              
                                 <div class="col-lg-7 col-md-12">
                                     <div class="slider-content s-slider-content">
-                                         <h2 style="font-size: 40px;" data-animation="fadeInUp" data-delay=".4s">Мы работаем с крупными брендами и международными выставками. Более 85% наших клиентов приходят по рекомендации — и это наша главная гордость.</h2>
-                                         <p data-animation="fadeInDown" data-delay=".4s">В Expobox.uz мы проектируем и создаём выставочные стенды, которые визуально передают идею вашего бренда.</p>    
-                                         <p data-animation="fadeInDown" data-delay=".4s">Уникальный дизайн, продуманные детали и безупречная реализация — всё, чтобы ваш бренд говорил сам за себя.</p>    
+                                         <h2 style="font-size: 40px;" data-animation="fadeInUp" data-delay=".4s" data-lang-key="hero_title">Мы работаем с крупными брендами и международными выставками. Более 85% наших клиентов приходят по рекомендации — и это наша главная гордость.</h2>
+                                         <p data-animation="fadeInDown" data-delay=".4s" data-lang-key="hero_subtitle1">В Expobox.uz мы проектируем и создаём выставочные стенды, которые визуально передают идею вашего бренда.</p>    
+                                         <p data-animation="fadeInDown" data-delay=".4s" data-lang-key="hero_subtitle2">Уникальный дизайн, продуманные детали и безупречная реализация — всё, чтобы ваш бренд говорил сам за себя.</p>    
                                     </div>
                                      <div class="slider-btn2 pl-100 mt-30">     
-                                            <a href="#contact" data-animation="fadeInLeft" data-delay=".4s">Связаться сейчас</a>  
+                                            <a href="#contact" data-animation="fadeInLeft" data-delay=".4s" data-lang-key="contact_now">Связаться сейчас</a>  
                                         </div>        
                                 </div>
                                 <div class="col-lg-5 col-md-12 p-relative">
@@ -129,50 +137,50 @@
             <div class="brand-area pt-120 wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
                 <div class="container">
                     <div class="row brand-active" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; min-height: 180px;">
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/kengmakon.png" alt="Keng Makon"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/tayota.png" alt="Toyota"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/gm.png" alt="GM"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/bnc.png" alt="BNC Global"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/suntex.png" alt="Sun Tex"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/samauto.png" alt="Samauto"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/davrbank.png" alt="Davr Bank"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/prestige.png" alt="Prestige"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/jet.png" alt="Infrastructure Team"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/callone.png" alt="Call One"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/alutex.png" alt="Alutex"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/app.png" alt="App"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/oqsaroy.png" alt="Oqsaroy Group"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/byd.png" alt="BYD"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/tederic.png" alt="Tederic"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/epam.png" alt="EPAM"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/tk.png" alt="TR"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/trastbank.png" alt="Trast Bank"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/oildrive.png" alt="Oil Drive"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/huawey.png" alt="Huawei"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/argetest.png" alt="Argetest"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/uat.png" alt="UAT"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/dewalt.png" alt="Dewalt"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/termopribor.png" alt="Termpribor"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/textile.png" alt="Textile"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/hyatt.png" alt="Hyatt"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/artikul.png" alt="Artikul Kabel"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/utg.png" alt="UTG"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/voris.png" alt="Voris"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/safi.png" alt="Safi"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/oracle.png" alt="Oracle"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/uzairways.png" alt="Uzbekistan Airways"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/brb.png" alt="BRB"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/strans.png" alt="Strans"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/vertex.png" alt="Vertex"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/inco.png" alt="Inco Chemical"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/uzauto.png" alt="Uzauto"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/lotos.png" alt="Lotos"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/ostex.png" alt="Ostex"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/sqb.png" alt="SQB"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/krone.png" alt="Krone"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/oqsaroy-1.png" alt="Oqsaroy Vortex"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/centrum.png" alt="Centrumair"></div></div>
-                        <div class="col-xl-2"><div class="single-brand"><img src="img/brand/nbu.png" alt="NBU"></div></div>
+                        <div class="single-brand"><img src="img/brand/kengmakon.png" alt="Keng Makon"></div>
+                        <div class="single-brand"><img src="img/brand/tayota.png" alt="Toyota"></div>
+                        <div class="single-brand"><img src="img/brand/gm.png" alt="GM"></div>
+                        <div class="single-brand"><img src="img/brand/bnc.png" alt="BNC Global"></div>
+                        <div class="single-brand"><img src="img/brand/suntex.png" alt="Sun Tex"></div>
+                        <div class="single-brand"><img src="img/brand/samauto.png" alt="Samauto"></div>
+                        <div class="single-brand"><img src="img/brand/davrbank.png" alt="Davr Bank"></div>
+                        <div class="single-brand"><img src="img/brand/prestige.png" alt="Prestige"></div>
+                        <div class="single-brand"><img src="img/brand/jet.png" alt="Infrastructure Team"></div>
+                        <div class="single-brand"><img src="img/brand/callone.png" alt="Call One"></div>
+                        <div class="single-brand"><img src="img/brand/alutex.png" alt="Alutex"></div>
+                        <div class="single-brand"><img src="img/brand/app.png" alt="App"></div>
+                        <div class="single-brand"><img src="img/brand/oqsaroy.png" alt="Oqsaroy Group"></div>
+                        <div class="single-brand"><img src="img/brand/byd.png" alt="BYD"></div>
+                        <div class="single-brand"><img src="img/brand/tederic.png" alt="Tederic"></div>
+                        <div class="single-brand"><img src="img/brand/epam.png" alt="EPAM"></div>
+                        <div class="single-brand"><img src="img/brand/tk.png" alt="TR"></div>
+                        <div class="single-brand"><img src="img/brand/trastbank.png" alt="Trast Bank"></div>
+                        <div class="single-brand"><img src="img/brand/oildrive.png" alt="Oil Drive"></div>
+                        <div class="single-brand"><img src="img/brand/huawey.png" alt="Huawei"></div>
+                        <div class="single-brand"><img src="img/brand/argetest.png" alt="Argetest"></div>
+                        <div class="single-brand"><img src="img/brand/uat.png" alt="UAT"></div>
+                        <div class="single-brand"><img src="img/brand/dewalt.png" alt="Dewalt"></div>
+                        <div class="single-brand"><img src="img/brand/termopribor.png" alt="Termpribor"></div>
+                        <div class="single-brand"><img src="img/brand/textile.png" alt="Textile"></div>
+                        <div class="single-brand"><img src="img/brand/hyatt.png" alt="Hyatt"></div>
+                        <div class="single-brand"><img src="img/brand/artikul.png" alt="Artikul Kabel"></div>
+                        <div class="single-brand"><img src="img/brand/utg.png" alt="UTG"></div>
+                        <div class="single-brand"><img src="img/brand/voris.png" alt="Voris"></div>
+                        <div class="single-brand"><img src="img/brand/safi.png" alt="Safi"></div>
+                        <div class="single-brand"><img src="img/brand/oracle.png" alt="Oracle"></div>
+                        <div class="single-brand"><img src="img/brand/uzairways.png" alt="Uzbekistan Airways"></div>
+                        <div class="single-brand"><img src="img/brand/brb.png" alt="BRB"></div>
+                        <div class="single-brand"><img src="img/brand/strans.png" alt="Strans"></div>
+                        <div class="single-brand"><img src="img/brand/vertex.png" alt="Vertex"></div>
+                        <div class="single-brand"><img src="img/brand/inco.png" alt="Inco Chemical"></div>
+                        <div class="single-brand"><img src="img/brand/uzauto.png" alt="Uzauto"></div>
+                        <div class="single-brand"><img src="img/brand/lotos.png" alt="Lotos"></div>
+                        <div class="single-brand"><img src="img/brand/ostex.png" alt="Ostex"></div>
+                        <div class="single-brand"><img src="img/brand/sqb.png" alt="SQB"></div>
+                        <div class="single-brand"><img src="img/brand/krone.png" alt="Krone"></div>
+                        <div class="single-brand"><img src="img/brand/oqsaroy-1.png" alt="Oqsaroy Vortex"></div>
+                        <div class="single-brand"><img src="img/brand/centrum.png" alt="Centrumair"></div>
+                        <div class="single-brand"><img src="img/brand/nbu.png" alt="NBU"></div>
                     </div>
                 </div>
             </div>
@@ -182,13 +190,14 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    height: 100px;
-                    min-height: 100px;
-                    padding-left: 10px;
-                    padding-right: 10px;
+                    height: 120px;
+                    min-height: 120px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    box-sizing: border-box; 
                 }
                 .brand-area .single-brand img {
-                    max-height: 80px;
+                    max-height: 100px;
                     width: auto;
                     margin: 0 auto;
                     display: block;
@@ -201,10 +210,10 @@
                             <div class="col-lg-8 col-md-9">
                                 <div class="section-title p-relative text-center mb-50 wow fadeInLeft  animated" data-animation="fadeInLeft" data-delay=".4s">
                                  <h5><span class="line"> <img src="img/bg/sub-text-logo.png" alt="circle_right"></span></h5>
-                                <h2>
+                                <h2 data-lang-key="services_title">
                                     Наши ключевые услуги
                                 </h2>
-                                <p>Мы сосредоточены на четырёх ключевых услугах, которые пользуются наибольшим спросом среди наших клиентов. Это — изготовление выставочных стендов, оформление мероприятий, производство рекламных конструкций и создание декоративных решений. </p>
+                                <p data-lang-key="services_subtitle">Мы сосредоточены на четырёх ключевых услугах, которые пользуются наибольшим спросом среди наших клиентов. Это — изготовление выставочных стендов, оформление мероприятий, производство рекламных конструкций и создание декоративных решений. </p>
                             </div>
                             </div>
                            
@@ -217,12 +226,12 @@
                                 <img src="img/icon/sr-icon1-hover.png" alt="img" class="hover">
                             </div>
                             <div class="second-services-content">
-                                <h5>Дизайн, производство и монтаж выставочных стендов</h5>
-                                <p style="font-size: 12px;">- Разработка индивидуальных 3D-дизайн проектов стендов</p>
-                                <p style="font-size: 12px;">- Производство выставочных стендов (из МДФ, ПВХ, алюминия и других материалов)</p>
-                                <p style="font-size: 12px;">- Монтаж и демонтаж стендов на месте проведения мероприятия</p>
-                                <p style="font-size: 12px;">- Решения для нестандартных и сложных конструкций стендов</p>
-                                <p style="font-size: 12px; margin-top: 0;">- Обслуживание и техподдержка стендов во время мероприятий</p>
+                                <h5 data-lang-key="service1_title">Дизайн, производство и монтаж выставочных стендов</h5>
+                                <p style="font-size: 12px;" data-lang-key="service1_item1">- Разработка индивидуальных 3D-дизайн проектов стендов</p>
+                                <p style="font-size: 12px;" data-lang-key="service1_item2">- Производство выставочных стендов (из МДФ, ПВХ, алюминия и других материалов)</p>
+                                <p style="font-size: 12px;" data-lang-key="service1_item3">- Монтаж и демонтаж стендов на месте проведения мероприятия</p>
+                                <p style="font-size: 12px;" data-lang-key="service1_item4">- Решения для нестандартных и сложных конструкций стендов</p>
+                                <p style="font-size: 12px; margin-top: 0;" data-lang-key="service1_item5">- Обслуживание и техподдержка стендов во время мероприятий</p>
                             </div>
                                <div class="sr-h-bg">
                                <img src="img/bg/sr-h-bg.png" alt="icon"/>
@@ -236,11 +245,11 @@
                                 <img src="img/icon/sr-icon2-hover.png" alt="img" class="hover">
                             </div>
                             <div class="second-services-content">
-                                <h5>Аренда мебели и аксессуаров для мероприятий</h5>
-                                <p style="font-size: 12px;">- Столы, стулья, стойки регистрации</p>
-                                <p style="font-size: 12px;">- Барные стойки, диваны, подиумы, фуршетные зоны</p>
-                                <p style="font-size: 12px;">- Стойки для брошюр, витрины, брендированные элементы</p>
-                                <p style="font-size: 12px;">- Напольные покрытия: ковровые дорожки, подиумы, подиумные платформы</p>
+                                <h5 data-lang-key="service2_title">Аренда мебели и аксессуаров для мероприятий</h5>
+                                <p style="font-size: 12px;" data-lang-key="service2_item1">- Столы, стулья, стойки регистрации</p>
+                                <p style="font-size: 12px;" data-lang-key="service2_item2">- Барные стойки, диваны, подиумы, фуршетные зоны</p>
+                                <p style="font-size: 12px;" data-lang-key="service2_item3">- Стойки для брошюр, витрины, брендированные элементы</p>
+                                <p style="font-size: 12px;" data-lang-key="service2_item4">- Напольные покрытия: ковровые дорожки, подиумы, подиумные платформы</p>
                             </div>
                                <div class="sr-h-bg">
                                <img src="img/bg/sr-h-bg.png" alt="icon"/>
@@ -254,12 +263,12 @@
                                 <img src="img/icon/sr-icon3-hover.png" alt="img" class="hover">
                             </div>
                             <div class="second-services-content">
-                                <h5>Аренда оборудования и мультимедиа</h5>
-                                <p style="font-size: 12px;">- LED-экраны различных форматов и размеров</p>
-                                <p style="font-size: 12px;">- Интерактивные доски, сенсорные экраны, панели</p>
-                                <p style="font-size: 12px;">- Телевизоры, проекторы, акустические системы</p>
-                                <p style="font-size: 12px;">- Осветительное оборудование (споты, светодиоды, архитектурная подсветка)</p>
-                                <p style="font-size: 12px;">- Генераторы, распределители питания, технические кабели</p>
+                                <h5 data-lang-key="service3_title">Аренда оборудования и мультимедиа</h5>
+                                <p style="font-size: 12px;" data-lang-key="service3_item1">- LED-экраны различных форматов и размеров</p>
+                                <p style="font-size: 12px;" data-lang-key="service3_item2">- Интерактивные доски, сенсорные экраны, панели</p>
+                                <p style="font-size: 12px;" data-lang-key="service3_item3">- Телевизоры, проекторы, акустические системы</p>
+                                <p style="font-size: 12px;" data-lang-key="service3_item4">- Осветительное оборудование (споты, светодиоды, архитектурная подсветка)</p>
+                                <p style="font-size: 12px;" data-lang-key="service3_item5">- Генераторы, распределители питания, технические кабели</p>
                             </div>
                                <div class="sr-h-bg">
                                <img src="img/bg/sr-h-bg.png" alt="icon"/>
@@ -273,12 +282,12 @@
                                 <img src="img/icon/sr-icon4-hover.png" alt="img" class="hover">
                             </div>
                             <div class="second-services-content">
-                                <h5>Организация мероприятий "под ключ"</h5>
-                                <p style="font-size: 12px;">- Планирование и управление мероприятиями</p>
-                                <p style="font-size: 12px;">- Подбор персонала: хостессы, модели, промоутеры</p>
-                                <p style="font-size: 12px;">- Кейтеринг, кофе-брейки, организация питания</p>
-                                <p style="font-size: 12px;">- Сценарии мероприятий, подбор спикеров и ведущих</p>
-                                <p style="font-size: 12px;">- Оформление фотозон, пресс-воллов и брендированных зон</p>
+                                <h5 data-lang-key="service4_title">Организация мероприятий "под ключ"</h5>
+                                <p style="font-size: 12px;" data-lang-key="service4_item1">- Планирование и управление мероприятиями</p>
+                                <p style="font-size: 12px;" data-lang-key="service4_item2">- Подбор персонала: хостессы, модели, промоутеры</p>
+                                <p style="font-size: 12px;" data-lang-key="service4_item3">- Кейтеринг, кофе-брейки, организация питания</p>
+                                <p style="font-size: 12px;" data-lang-key="service4_item4">- Сценарии мероприятий, подбор спикеров и ведущих</p>
+                                <p style="font-size: 12px;" data-lang-key="service4_item5">- Оформление фотозон, пресс-воллов и брендированных зон</p>
                             </div>
                                <div class="sr-h-bg">
                                <img src="img/bg/sr-h-bg.png" alt="icon"/>
@@ -302,10 +311,10 @@
                         <div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="about-content s-about-content wow fadeInRight  animated" data-animation="fadeInRight" data-delay=".4s">
                                 <div class="about-title second-title pb-25">  
-                                    <h5><span class="line"> <img src="img/features/sublogo.png" alt="circle_right"></span> Про нас</h5>
-                                    <h2>Мы создаём пространство, которое выделяет ваш бренд</h2>                                   
+                                    <h5 data-lang-key="about_us_label"><span class="line"> <img src="img/features/sublogo.png" alt="circle_right"></span> Про нас</h5>
+                                    <h2 data-lang-key="about_title">Мы создаём пространство, которое выделяет ваш бренд</h2>                                   
                                 </div>
-                                    <p class="pline">Мы уверены: эффектное визуальное оформление помогает бизнесу говорить громче. В каждой детали наших проектов — креатив, точность и практическая польза для клиента.</p>
+                                    <p class="pline" data-lang-key="about_subtitle">Мы уверены: эффектное визуальное оформление помогает бизнесу говорить громче. В каждой детали наших проектов — креатив, точность и практическая польза для клиента.</p>
                                    <div class="about-content2">
                                     <div class="row">
                                     <div class="col-md-12">
@@ -315,20 +324,20 @@
                                                 <div class="ano"><span>01</span>
                                                 </div> 
                                                 <div class="text">
-                                                    <h3>10 лет</h3><span>в сфере выставочного оформления</span> 
+                                                    <h3 data-lang-key="about_feature1_title">10 лет</h3><span data-lang-key="about_feature1_subtitle">в сфере выставочного оформления</span> 
                                                 </div>
                                             </div>
-                                            <p style="padding-right: 15px;">Реализуем проекты любой сложности с учётом ваших целей.</p>
+                                            <p style="padding-right: 15px;" data-lang-key="about_feature1_text">Реализуем проекты любой сложности с учётом ваших целей.</p>
                                         </li>
                                         <li>
                                             <div class="abcontent">
                                                 <div class="ano"><span>02</span></div> 
                                                 <div class="text">
-                                                    <h3>От идеи до установки </h3>
-                                                    <span>- всё в одних руках</span> 
+                                                    <h3 data-lang-key="about_feature2_title">От идеи до установки </h3>
+                                                    <span data-lang-key="about_feature2_subtitle">- всё в одних руках</span> 
                                                 </div>
                                             </div>
-                                            <p>Продумываем, производим и монтируем конструкции под ключ.</p>
+                                            <p data-lang-key="about_feature2_text">Продумываем, производим и монтируем конструкции под ключ.</p>
                                         </li>                                                
                                      </ul>
                                     </div>
@@ -337,7 +346,7 @@
                                     <div class="row align-items-center mt-20">
                                     <div class="col-lg-12"> 
                                         <div class="slider-btn">                                          
-                                            <a href="#" class="btn ss-btn mr-15" data-animation="fadeInRight" data-delay=".8s">подрбнее <i class="fa-sharp fa-light fa-arrow-up"></i></a>	
+                                            <a href="#" class="btn ss-btn mr-15" data-animation="fadeInRight" data-delay=".8s" data-lang-key="learn_more">подрбнее <i class="fa-sharp fa-light fa-arrow-up"></i></a>	
                                             <a href="#"  data-animation="fadeInRight" data-delay=".8s"><img src="img/features/fplay.png" alt="img"></a>	
                                         </div>
                                     </div>    
@@ -359,14 +368,14 @@
                             <div class="col-lg-8 col-md-9">
                                 <div class="section-title p-relative text-center mb-50 wow fadeInLeft  animated" data-animation="fadeInLeft" data-delay=".4s">
                                  <h5><span class="line"> <img src="img/bg/sub-text-logo.png" alt="circle_right"></span></h5>
-                                <h2>
+                                <h2 data-lang-key="gallery_title">
                                    Наши реализованные проекты
                                 </h2>
-                                <p>Мы разрабатываем и реализуем проекты, которые помогают брендам выделяться на выставках, мероприятиях и в публичных пространствах. В каждом проекте сочетаются эстетика, функциональность и ваши бизнес-задачи.</p>
+                                <p data-lang-key="gallery_subtitle">Мы разрабатываем и реализуем проекты, которые помогают брендам выделяться на выставках, мероприятиях и в публичных пространствах. В каждом проекте сочетаются эстетика, функциональность и ваши бизнес-задачи.</p>
                             </div>
                             </div>
                            
-                        </div>
+                    </div>
                     <div class="portfolio ">
                         <div class="row align-items-end">
                              <div class="col-lg-12">
@@ -381,142 +390,152 @@
                         </div>
                             </div>
                         </div>
-                        <div class="grid col2 wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+
+                        <div class="grid col2 wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
+
+                            <!-- Проект 1 (соответствует фильтру ".01") -->
                             <div class="grid-item 01">
-                                <a href="img/gallery/01-1.png" class="gallery-link" title="Проект 1-1">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project1" title="Посмотреть Проект 1">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/01-1.png" alt="img" class="img">      
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="grid-item 01">
-                                <a href="img/gallery/01-2.png" class="gallery-link" title="Проект 1-2">
-                                    <figure class="gallery-image">
-                                        <img src="img/gallery/01-2.png" alt="img" class="img"> 
+                                        <img src="img/gallery/01-1.png" alt="Обложка Проекта 1" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 01">
-                                <a href="img/gallery/01-3.png" class="gallery-link" title="Проект 1-3">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project1" title="Посмотреть Проект 1">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/01-3.png" alt="img" class="img">     
+                                        <img src="img/gallery/01-2.png" alt="Обложка Проекта 1" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 01">
-                                <a href="img/gallery/01-4.png" class="gallery-link" title="Проект 1-4">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project1" title="Посмотреть Проект 1">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/01-4.png" alt="img" class="img">
+                                        <img src="img/gallery/01-3.png" alt="Обложка Проекта 1" class="img">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid-item 01">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project1" title="Посмотреть Проект 1">
+                                    <figure class="gallery-image">
+                                        <img src="img/gallery/01-4.png" alt="Обложка Проекта 1" class="img">
                                     </figure>
                                 </a>
                             </div>
 
+                            <!-- Проект 2 (соответствует фильтру ".02") -->
                             <div class="grid-item 02">
-                                <a href="img/gallery/02-1.png" class="gallery-link" title="Проект 2-1">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project2" title="Посмотреть Проект 2">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/02-1.png" alt="img" class="img">      
-                                    </figure>
-                            <div class="grid-item 02">
-                                <a href="img/gallery/02-2.png" class="gallery-link" title="Проект 2-2">
-                                    <figure class="gallery-image">
-                                        <img src="img/gallery/02-2.png" alt="img" class="img"> 
+                                        <img src="img/gallery/02-1.png" alt="Обложка Проекта 2" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 02">
-                                <a href="img/gallery/02-3.png" class="gallery-link" title="Проект 2-3">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project2" title="Посмотреть Проект 2">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/02-3.png" alt="img" class="img">     
+                                        <img src="img/gallery/02-2.png" alt="Обложка Проекта 2" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 02">
-                                <a href="img/gallery/02-4.png" class="gallery-link" title="Проект 2-4">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project2" title="Посмотреть Проект 2">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/02-4.png" alt="img" class="img">
+                                        <img src="img/gallery/02-3.png" alt="Обложка Проекта 2" class="img">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid-item 02">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project2" title="Посмотреть Проект 2">
+                                    <figure class="gallery-image">
+                                        <img src="img/gallery/02-4.png" alt="Обложка Проекта 2" class="img">
                                     </figure>
                                 </a>
                             </div>
 
+                            <!-- Проект 3 (соответствует фильтру ".03") -->
                             <div class="grid-item 03">
-                                <a href="img/gallery/03-1.png" class="gallery-link" title="Проект 3-1">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project3" title="Посмотреть Проект 3">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/03-1.png" alt="img" class="img">      
+                                        <img src="img/gallery/03-1.png" alt="Обложка Проекта 3" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 03">
-                                <a href="img/gallery/03-2.png" class="gallery-link" title="Проект 3-2">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project3" title="Посмотреть Проект 3">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/03-2.png" alt="img" class="img"> 
+                                        <img src="img/gallery/03-2.png" alt="Обложка Проекта 3" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 03">
-                                <a href="img/gallery/03-3.png" class="gallery-link" title="Проект 3-3">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project3" title="Посмотреть Проект 3">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/03-3.png" alt="img" class="img">     
+                                        <img src="img/gallery/03-3.png" alt="Обложка Проекта 3" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 03">
-                                <a href="img/gallery/03-4.png" class="gallery-link" title="Проект 3-4">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project3" title="Посмотреть Проект 3">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/03-4.png" alt="img" class="img">
+                                        <img src="img/gallery/03-4.png" alt="Обложка Проекта 3" class="img">
                                     </figure>
                                 </a>
                             </div>
 
+                            <!-- Проект 4 (соответствует фильтру ".04") -->
                             <div class="grid-item 04">
-                                <a href="img/gallery/04-1.png" class="gallery-link" title="Проект 4-1">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project4" title="Посмотреть Проект 4">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/04-1.png" alt="img" class="img">      
+                                        <img src="img/gallery/04-1.png" alt="Обложка Проекта 4" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 04">
-                                <a href="img/gallery/04-2.png" class="gallery-link" title="Проект 4-2">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project4" title="Посмотреть Проект 4">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/04-2.png" alt="img" class="img"> 
+                                        <img src="img/gallery/04-2.png" alt="Обложка Проекта 4" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 04">
-                                <a href="img/gallery/04-3.png" class="gallery-link" title="Проект 4-3">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project4" title="Посмотреть Проект 4">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/04-3.png" alt="img" class="img">     
+                                        <img src="img/gallery/04-3.png" alt="Обложка Проекта 4" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 04">
-                                <a href="img/gallery/04-4.png" class="gallery-link" title="Проект 4-4">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project4" title="Посмотреть Проект 4">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/04-4.png" alt="img" class="img">
+                                        <img src="img/gallery/04-4.png" alt="Обложка Проекта 4" class="img">
                                     </figure>
                                 </a>
                             </div>
 
+                            <!-- Проект 5 (соответствует фильтру ".05") -->
                             <div class="grid-item 05">
-                                <a href="img/gallery/05-1.png" class="gallery-link" title="Проект 5-1">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project5" title="Посмотреть Проект 5">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/05-1.png" alt="img" class="img">      
+                                        <img src="img/gallery/05-1.png" alt="Обложка Проекта 5" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 05">
-                                <a href="img/gallery/05-2.png" class="gallery-link" title="Проект 5-2">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project5" title="Посмотреть Проект 5">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/05-2.png" alt="img" class="img"> 
+                                        <img src="img/gallery/05-2.png" alt="Обложка Проекта 5" class="img">
                                     </figure>
                                 </a>
                             </div>
                             <div class="grid-item 05">
-                                <a href="img/gallery/05-3.png" class="gallery-link" title="Проект 5-3">
+                                <a href="javascript:void(0);" class="gallery-trigger" data-gallery-key="project5" title="Посмотреть Проект 5">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/05-3.png" alt="img" class="img">     
+                                        <img src="img/gallery/05-3.png" alt="Обложка Проекта 5" class="img">
                                     </figure>
                                 </a>
                             </div>
+
                         </div>
 
                     </div>
@@ -526,12 +545,12 @@
             <!-- scrollbox-area -->        
             <div class="scrollbox2 mb-80 fix">
                <div class="scrollbox scrollbox--secondary scrollbox--reverse">
-                 <div class="scrollbox__item"><i class="fa-regular fa-star-of-life"></i> Дизайн</div>
+                 <div class="scrollbox__item" data-lang-key="ticker_design"><i class="fa-regular fa-star-of-life"></i> Дизайн</div>
                 <div class="scrollbox__item"><span class="red"><i class="fa-regular fa-star-of-life"></i> Expobox</span></div>
-                   <div class="scrollbox__item"><i class="fa-regular fa-star-of-life"></i> <span class="garry">ДИЗАЙН СТЕНДОВ</span></div>
-                   <div class="scrollbox__item"><i class="fa-regular fa-star-of-life"></i>  МЕРОПРИЯТИИ</div>
-                <div class="scrollbox__item"><i class="fa-regular fa-star-of-life"></i> <span class="garry2">РЕКЛАМА</span></div>
-                   <div class="scrollbox__item"><i class="fa-regular fa-star-of-life"></i>  <span class="garry3">МЕДИА</span> </div>
+                   <div class="scrollbox__item"><span class="garry" data-lang-key="ticker_stand_design">ДИЗАЙН СТЕНДОВ</span></div>
+                   <div class="scrollbox__item"><i class="fa-regular fa-star-of-life"></i>  <span data-lang-key="ticker_events">МЕРОПРИЯТИИ</span></div>
+                <div class="scrollbox__item"><i class="fa-regular fa-star-of-life"></i> <span class="garry2" data-lang-key="ticker_ads">РЕКЛАМА</span></div>
+                   <div class="scrollbox__item"><i class="fa-regular fa-star-of-life"></i>  <span class="garry3" data-lang-key="ticker_media">МЕДИА</span> </div>
                 </div>
          
             </div>
@@ -548,10 +567,10 @@
                         <div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="about-content s-about-content pl-30 wow fadeInRight  animated" data-animation="fadeInRight" data-delay=".4s">
                                 <div class="about-title second-title pb-25">  
-                                    <h5><span class="line"> <img src="img/features/sublogo.png" alt="circle_right"></span> Что мы делаем</h5>
-                                    <h2>Дизайн и конструкции, которые продают.</h2>                                   
+                                    <h5 data-lang-key="what_we_do_label"><span class="line"> <img src="img/features/sublogo.png" alt="circle_right"></span> Что мы делаем</h5>
+                                    <h2 data-lang-key="what_we_do_title">Дизайн и конструкции, которые продают.</h2>                                   
                                 </div>
-                                    <p class="about_subtext" >Мы помогаем компаниям выделяться на выставках, форумах и мероприятиях за счёт уникальных конструкций и дизайнерских решений. Мы превращаем пространства в эффективный маркетинговый инструмент для вашего бренда.</p>
+                                    <p class="about_subtext" data-lang-key="what_we_do_subtitle">Мы помогаем компаниям выделяться на выставках, форумах и мероприятиях за счёт уникальных конструкций и дизайнерских решений. Мы превращаем пространства в эффективный маркетинговый инструмент для вашего бренда.</p>
                                     <div class="skills-content s-about-content">                                
                                          <div class="skills-content s-about-content">
                                             <div class="skills row">
@@ -564,8 +583,8 @@
                                                         <div class="inner-box">
                                                             <div class="glass-bg"></div>
                                                             <div class="content">
-                                                                <h4>Как мы работаем быстрее?</h4>
-                                                                <a href="#work" data-animation="fadeInRight" class="custom-link" data-delay=".8s">
+                                                                <h4 data-lang-key="how_we_work">Как мы работаем быстрее?</h4>
+                                                                <a href="#work" data-animation="fadeInRight" class="custom-link" data-delay=".8s" data-lang-key="learn_more_2">
                                                                     Узнать подробнее
                                                                     <i class="fa-sharp fa-light fa-arrow-up custom-arrow"></i>
                                                                 </a>
@@ -577,18 +596,18 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 skill">         
-                                                  <div class="skill-name"><strong>85%</strong> <span>проектов возвращаются с новыми задачами</span> </div>
+                                                  <div class="skill-name" data-lang-key="stats_projects_return"><strong>85%</strong> <span>проектов возвращаются с новыми задачами</span> </div>
                                                   <div class="skill-bar mb-20">
                                                     <div class="skill-per" id="85"></div>
                                                   </div>
 
-                                                  <div class="skill-name"><strong>85%</strong> <span>проектов возвращаются с новыми задачами</span> </div>
+                                                  <div class="skill-name" data-lang-key="stats_clients_recommend"><strong>85%</strong> <span>клиентов приходят по рекомендации</span> </div>
                                                   <div class="skill-bar mb-20">
-                                                    <div class="skill-per" id="85"></div>
+                                                    <div class="skill-per" id="85-2"></div>
                                                   </div>
 
                                                   <div class="slider-btn">                                          
-                                                    <a href="#services" class="btn ss-btn2 mr-15" data-animation="fadeInRight" data-delay=".8s">Узнать подробнее <i class="fa-sharp fa-light fa-arrow-up"></i></a>
+                                                    <a href="#services" class="btn ss-btn2 mr-15" data-animation="fadeInRight" data-delay=".8s" data-lang-key="learn_more_3">Узнать подробнее <i class="fa-sharp fa-light fa-arrow-up"></i></a>
                                                 </div>
                                                 </div>                                                             
                                             </div>
@@ -615,10 +634,10 @@
                             <div class="col-lg-8 col-md-9">
                                 <div class="section-title p-relative text-center mb-50 wow fadeInLeft  animated" data-animation="fadeInLeft" data-delay=".4s">
                                  <h5><span class="line"> <img src="img/bg/sub-text-logo.png" alt="circle_right"></span></h5>
-                                <h2>
+                                <h2 data-lang-key="testimonials_title">
                                    Что говорят наши клиенты?
                                 </h2>
-                                <p>Мы ценим доверие наших клиентов. Их отзывы — лучшее подтверждение качества нашей работы.</p>
+                                <p data-lang-key="testimonials_subtitle">Мы ценим доверие наших клиентов. Их отзывы — лучшее подтверждение качества нашей работы.</p>
                             </div>
                             </div>
                            
@@ -630,13 +649,13 @@
                                     <div class="testi-author">
                                         <img src="img/testimonial/sarvar.png" alt="img">
                                         <div class="ta-info">
-                                          <h6>Сарвар </h6>
+                                          <h6 data-lang-key="testimonial1_author">Сарвар </h6>
                                             <div class="review-icon">
                                                 <img src="img/testimonial/review-icon.png" alt="img">
                                              </div>
                                         </div>
                                     </div>                                   
-                                    <p>Мы работаем с “PARADOX” , более 3-х лет и 
+                                    <p data-lang-key="testimonial1_text">Мы работаем с “PARADOX” , более 3-х лет и 
                                         сильно доверяем этой компании. Они 
                                         разрабатывают лучшие дизайны и стенды. 
                                         Поэтому мы 2 раза подряд побеждали в 
@@ -657,13 +676,13 @@
                                     <div class="testi-author">
                                         <img src="img/testimonial/amal.png" alt="img">
                                         <div class="ta-info">
-                                          <h6>Амал Шарипов</h6>
+                                          <h6 data-lang-key="testimonial2_author">Амал Шарипов</h6>
                                             <div class="review-icon">
                                                 <img src="img/testimonial/review-icon.png" alt="img">
                                              </div>
                                         </div>
                                     </div>                                   
-                                    <p>Рекомендуем ХК “PARADOX-GROUP” как 
+                                    <p data-lang-key="testimonial2_text">Рекомендуем ХК “PARADOX-GROUP” как 
                                         добросовестного партнёра и надежного
                                         поставщика.</p>
                                     <div class="row">
@@ -694,13 +713,13 @@
                      <div class="row">
                         <div class="col-lg-7">                           
                             <div class="section-title center-align">
-                                <h2>
+                                <h2 data-lang-key="video_title">
                                  Ваш успех начинается с наших конструкций.
                                 </h2>
-                                <p>Expobox — пространство для сильных брендов.</p>
+                                <p data-lang-key="video_subtitle">Expobox — пространство для сильных брендов.</p>
                             </div>
                                <div class="slider-btn mt-15">                                          
-                                    <a href="#" class="btn ss-btn mr-15" data-animation="fadeInRight" data-delay=".8s">Смотреть видео <i class="fa-sharp fa-light fa-arrow-up"></i></a>	
+                                    <a href="#" class="btn ss-btn mr-15" data-animation="fadeInRight" data-delay=".8s" data-lang-key="watch_video">Смотреть видео <i class="fa-sharp fa-light fa-arrow-up"></i></a>	
                                     <a href="https://www.youtube.com/watch?v=gyGsPlt06bo" class="popup-video"><img src="img/features/fplay.png" alt="img"></a>	
                                 </div>
                         </div>
@@ -725,10 +744,10 @@
                             <div class="col-lg-8 col-md-9">
                                 <div class="section-title p-relative text-center mb-50 wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
                                  <h5><span class="line"> <img src="img/bg/sub-text-logo.png" alt="circle_right"></span></h5>
-                                <h2>
+                                <h2 data-lang-key="team_title">
                                   Наша команда профессионалов
                                 </h2>
-                                <p>В основе каждого успешного проекта стоят люди с опытом, знаниями и креативным мышлением. Наша команда специалистов помогает превращать ваши идеи в эффективные выставочные решения.</p>
+                                <p data-lang-key="team_subtitle">В основе каждого успешного проекта стоят люди с опытом, знаниями и креативным мышлением. Наша команда специалистов помогает превращать ваши идеи в эффективные выставочные решения.</p>
                             </div>
                             </div>
                            
@@ -741,8 +760,8 @@
                                          <img src="img/team/01.png" alt="img">                                        
                                     </div>
                                      <div class="team-info">                                         
-                                        <h4>Гереев Урал</h4>
-                                         <p>Директор</p>
+                                        <h4 data-lang-key="team_member1_name">Гереев Урал</h4>
+                                         <p data-lang-key="team_member1_role">Директор</p>
                                     </div>
                                 </div>
                             </div>
@@ -754,8 +773,8 @@
                                         <img src="img/team/02.png" alt="img">                                        
                                     </div> 
                                     <div class="team-info">                                         
-                                        <h4>Насимбек Мухторов</h4>
-                                         <p>Менежер</p>
+                                        <h4 data-lang-key="team_member2_name">Насимбек Мухторов</h4>
+                                         <p data-lang-key="team_member2_role">Менежер</p>
                                             
                                     </div>
                                 </div>
@@ -768,26 +787,11 @@
                                         <img src="img/team/03.png" alt="img">                                        
                                     </div>
                                     <div class="team-info">                                         
-                                        <h4>Рамиль Гиззатуллин </h4>
-                                        <p>Тех-дизайнер</p>
+                                        <h4 data-lang-key="team_member3_name">Рамиль Гиззатуллин </h4>
+                                        <p data-lang-key="team_member3_role">Тех-дизайнер</p>
                                         
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3">
-                            <div class="single-team mb-30" >
-                                <div class="team-thumb">
-                                    <div class="brd">
-                                         <img src="img/team/04.png" alt="img">                                      
-                                    </div>
-                                    <div class="team-info">                                        
-                                        <h4>Далер Джалилов</h4>
-                                         <p>Дизайнер</p>
-                                        
-                                    </div>
-                                </div>
-                                
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3">
@@ -797,8 +801,8 @@
                                          <img src="img/team/05.png" alt="img">                                       
                                     </div>
                                      <div class="team-info">                                         
-                                        <h4>Шукруллох Умар</h4>
-                                         <p>Дизайнер</p>
+                                        <h4 data-lang-key="team_member4_name">Шукруллох Умар</h4>
+                                         <p data-lang-key="team_member4_role">Дизайнер</p>
                                          
                                     </div>
                                 </div>
@@ -814,13 +818,13 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="section-title cta-title wow fadeInLeft animated" data-animation="fadeInDown animated" data-delay=".2s">
-                                <h2>Начните и развивайте свой бизнес прямо сейчас.</h2>
+                                <h2 data-lang-key="cta_title">Начните и развивайте свой бизнес прямо сейчас.</h2>
                             </div>
                                              
                         </div>
                         <div class="col-lg-4 text-right"> 
                             <div class="cta-btn s-cta-btn wow fadeInRight animated mt-30" data-animation="fadeInDown animated" data-delay=".2s">
-                                      <a href="#" class="btn ss-btn smoth-scroll">Связаться сейчас <i class="fa-sharp fa-light fa-arrow-up"></i></a>			
+                                      <a href="#" class="btn ss-btn smoth-scroll" data-lang-key="contact_now_2">Связаться сейчас <i class="fa-sharp fa-light fa-arrow-up"></i></a>			
                                 </div>
                         </div>
                     
@@ -842,8 +846,8 @@
                                 </div>
                                 <div class="info">
                                     <ul>
-                                        <li><span class="red">P:</span> +998 95 325 05 25</li>
-                                        <li><span class="red">L:</span> Mukhtar Auezov 1, Bektemir District, Tashkent City, Uzbekistan</li>
+                                        <li><span class="red">P:</span> <a href="tel:+998953250525">+998 95 325 05 25</a></li>
+                                        <li><span class="red">L:</span> <a href="https://www.google.com/maps/search/?api=1&query=Mukhtar+Auezov+1,+Bektemir+District,+Tashkent+City,+Uzbekistan" target="_blank" rel="noopener" data-lang-key="address">Mukhtar Auezov 1, Bektemir District, Tashkent City, Uzbekistan</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -851,7 +855,7 @@
                         <div class="col-xl-2 col-lg-2 col-sm-6">
                             <div class="footer-widget mb-30">
                                 <div class="f-widget-title">
-                                    <h2>Подписаться</h2>
+                                    <h2 data-lang-key="footer_subscribe">Подписаться</h2>
                                 </div>
                                 <div class="footer-link">
                                     <ul>                                        
@@ -866,14 +870,14 @@
                         <div class="col-xl-2 col-lg-2 col-sm-6">
                             <div class="footer-widget mb-30">
                                 <div class="f-widget-title">
-                                    <h2>ТОП услуги</h2>
+                                    <h2 data-lang-key="footer_top_services">ТОП услуги</h2>
                                 </div>
                                 <div class="footer-link">
                                     <ul>
-                                        <li>Дизайн, производство и монтаж выставочных стендов</li>
-                                        <li>Аренда оборудования и мультимедиа</li>
-                                        <li>Аренда мебели и аксессуаров для мероприятий</li>
-                                        <li>Организация мероприятий "под ключ"</li>
+                                        <li data-lang-key="footer_service1">Дизайн, производство и монтаж выставочных стендов</li>
+                                        <li data-lang-key="footer_service2">Аренда оборудования и мультимедиа</li>
+                                        <li data-lang-key="footer_service3">Аренда мебели и аксессуаров для мероприятий</li>
+                                        <li data-lang-key="footer_service4">Организация мероприятий "под ключ"</li>
                                     </ul>
                                 </div>
                             </div>
@@ -881,15 +885,15 @@
                       <div class="col-xl-2 col-lg-2 col-sm-6">
                             <div class="footer-widget mb-30">
                                 <div class="f-widget-title">
-                                    <h2>Рассматривать</h2>
+                                    <h2 data-lang-key="footer_explore">Рассматривать</h2>
                                 </div>
                                 <div class="footer-link">
                                     <ul>
-                                        <li><a href="#contact"> Контакты</a></li>
-                                        <li><a href="#team">Команда</a></li>
-                                        <li><a href="#work">Фотогалерея</a></li>
-                                        <li><a href="#testimonial">Отзывы</a></li>
-                                        <li><a href="#about">О нас</a></li>
+                                        <li><a href="#contact" data-lang-key="footer_nav_contacts"> Контакты</a></li>
+                                        <li><a href="#team" data-lang-key="footer_nav_team">Команда</a></li>
+                                        <li><a href="#work" data-lang-key="footer_nav_gallery">Фотогалерея</a></li>
+                                        <li><a href="#testimonial" data-lang-key="footer_nav_testimonials">Отзывы</a></li>
+                                        <li><a href="#about" data-lang-key="footer_nav_about">О нас</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -905,7 +909,7 @@
             <div class="copyright-wrap">              
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-6">                         
+                        <div class="col-lg-6" data-lang-key="copyright">                         
                               Copyright © 2025 <a href="https://paradox.uz" target="_blank" rel="noopener">Paradox.uz</a>. All rights reserved.          
                         </div>
                           <div class="col-lg-6 text-right">      
@@ -936,24 +940,262 @@
         <script src="js/parallax-scroll.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/element-in-view.js"></script>
-        <script src="js/main.js"></script></script>
+        <script src="js/main.js"></script>
 
+        <!-- ===== СКРИПТ ДЛЯ ГАЛЕРЕИ ===== -->
         <script>
         $(function() {
-        if ($.fn.magnificPopup) {
-            $('.grid').magnificPopup({
-            delegate: 'a.gallery-link',
-            type: 'image',
-            gallery: {
-                enabled: true
-            },
-            image: {
-                titleSrc: 'title'
-            }
+            const galleries = {
+                'project1': [ { src: 'img/gallery/01-1.png', title: 'Проект 1 - Вид 1' }, { src: 'img/gallery/01-2.png', title: 'Проект 1 - Вид 2' }, { src: 'img/gallery/01-3.png', title: 'Проект 1 - Вид 3' }, { src: 'img/gallery/01-4.png', title: 'Проект 1 - Вид 4' } ],
+                'project2': [ { src: 'img/gallery/02-1.png', title: 'Проект 2 - Фото 1' }, { src: 'img/gallery/02-2.png', title: 'Проект 2 - Фото 2' }, { src: 'img/gallery/02-3.png', title: 'Проект 2 - Фото 3' }, { src: 'img/gallery/02-4.png', title: 'Проект 2 - Фото 4' } ],
+                'project3': [ { src: 'img/gallery/03-1.png', title: 'Проект 3 - Изображение 1' }, { src: 'img/gallery/03-2.png', title: 'Проект 3 - Изображение 2' }, { src: 'img/gallery/03-3.png', title: 'Проект 3 - Изображение 3' }, { src: 'img/gallery/03-4.png', title: 'Проект 3 - Изображение 4' } ],
+                'project4': [ { src: 'img/gallery/04-1.png', title: 'Проект 4 - Изображение 1' }, { src: 'img/gallery/04-2.png', title: 'Проект 4 - Изображение 2' }, { src: 'img/gallery/04-3.png', title: 'Проект 4 - Изображение 3' }, { src: 'img/gallery/04-4.png', title: 'Проект 4 - Изображение 4' } ],
+                'project5': [ { src: 'img/gallery/05-1.png', title: 'Проект 5 - Изображение 1' }, { src: 'img/gallery/05-2.png', title: 'Проект 5 - Изображение 2' }, { src: 'img/gallery/05-3.png', title: 'Проект 5 - Изображение 3' } ]
+            };
+
+            $('.gallery-trigger').on('click', function(e) {
+                e.preventDefault();
+                const galleryKey = $(this).data('gallery-key');
+                const items = galleries[galleryKey];
+
+                if (items && items.length > 0) {
+                    $.magnificPopup.open({
+                        items: items,
+                        type: 'image',
+                        gallery: { enabled: true }
+                    });
+                }
             });
-        } else {
-            console.error('magnificPopup не найден!');
-        }
+        });
+        </script>
+        
+        <!-- ===== СКРИПТ ДЛЯ ПЕРЕКЛЮЧЕНИЯ ЯЗЫКОВ ===== -->
+        <script>
+        $(function() {
+            // 1. Словарь с переводами
+            const translations = {
+                'ru': {
+                    'nav_home': 'Главная',
+                    'nav_services': 'Услуги',
+                    'nav_about': 'О нас',
+                    'nav_team': 'Команда',
+                    'nav_contacts': 'Контакты',
+                    'header_slogan': 'Воплощаем идеи с помощью <br>умного дизайна и конструкций',
+                    'hero_title': 'Мы работаем с крупными брендами и международными выставками. Более 85% наших клиентов приходят по рекомендации — и это наша главная гордость.',
+                    'hero_subtitle1': 'В Expobox.uz мы проектируем и создаём выставочные стенды, которые визуально передают идею вашего бренда.',
+                    'hero_subtitle2': 'Уникальный дизайн, продуманные детали и безупречная реализация — всё, чтобы ваш бренд говорил сам за себя.',
+                    'contact_now': 'Связаться сейчас',
+                    'services_title': 'Наши ключевые услуги',
+                    'services_subtitle': 'Мы сосредоточены на четырёх ключевых услугах, которые пользуются наибольшим спросом среди наших клиентов. Это — изготовление выставочных стендов, оформление мероприятий, производство рекламных конструкций и создание декоративных решений.',
+                    'service1_title': 'Дизайн, производство и монтаж выставочных стендов',
+                    'service1_item1': '- Разработка индивидуальных 3D-дизайн проектов стендов',
+                    'service1_item2': '- Производство выставочных стендов (из МДФ, ПВХ, алюминия и других материалов)',
+                    'service1_item3': '- Монтаж и демонтаж стендов на месте проведения мероприятия',
+                    'service1_item4': '- Решения для нестандартных и сложных конструкций стендов',
+                    'service1_item5': '- Обслуживание и техподдержка стендов во время мероприятий',
+                    'service2_title': 'Аренда мебели и аксессуаров для мероприятий',
+                    'service2_item1': '- Столы, стулья, стойки регистрации',
+                    'service2_item2': '- Барные стойки, диваны, подиумы, фуршетные зоны',
+                    'service2_item3': '- Стойки для брошюр, витрины, брендированные элементы',
+                    'service2_item4': '- Напольные покрытия: ковровые дорожки, подиумы, подиумные платформы',
+                    'service3_title': 'Аренда оборудования и мультимедиа',
+                    'service3_item1': '- LED-экраны различных форматов и размеров',
+                    'service3_item2': '- Интерактивные доски, сенсорные экраны, панели',
+                    'service3_item3': '- Телевизоры, проекторы, акустические системы',
+                    'service3_item4': '- Осветительное оборудование (споты, светодиоды, архитектурная подсветка)',
+                    'service3_item5': '- Генераторы, распределители питания, технические кабели',
+                    'service4_title': 'Организация мероприятий "под ключ"',
+                    'service4_item1': '- Планирование и управление мероприятиями',
+                    'service4_item2': '- Подбор персонала: хостессы, модели, промоутеры',
+                    'service4_item3': '- Кейтеринг, кофе-брейки, организация питания',
+                    'service4_item4': '- Сценарии мероприятий, подбор спикеров и ведущих',
+                    'service4_item5': '- Оформление фотозон, пресс-воллов и брендированных зон',
+                    'about_us_label': 'Про нас',
+                    'about_title': 'Мы создаём пространство, которое выделяет ваш бренд',
+                    'about_subtitle': 'Мы уверены: эффектное визуальное оформление помогает бизнесу говорить громче. В каждой детали наших проектов — креатив, точность и практическая польза для клиента.',
+                    'about_feature1_title': '10 лет',
+                    'about_feature1_subtitle': 'в сфере выставочного оформления',
+                    'about_feature1_text': 'Реализуем проекты любой сложности с учётом ваших целей.',
+                    'about_feature2_title': 'От идеи до установки',
+                    'about_feature2_subtitle': '- всё в одних руках',
+                    'about_feature2_text': 'Продумываем, производим и монтируем конструкции под ключ.',
+                    'learn_more': 'подробнее',
+                    'gallery_title': 'Наши реализованные проекты',
+                    'gallery_subtitle': 'Мы разрабатываем и реализуем проекты, которые помогают брендам выделяться на выставках, мероприятиях и в публичных пространствах. В каждом проекте сочетаются эстетика, функциональность и ваши бизнес-задачи.',
+                    'ticker_design': 'Дизайн',
+                    'ticker_stand_design': 'ДИЗАЙН СТЕНДОВ',
+                    'ticker_events': 'МЕРОПРИЯТИИ',
+                    'ticker_ads': 'РЕКЛАМА',
+                    'ticker_media': 'МЕДИА',
+                    'what_we_do_label': 'Что мы делаем',
+                    'what_we_do_title': 'Дизайн и конструкции, которые продают.',
+                    'what_we_do_subtitle': 'Мы помогаем компаниям выделяться на выставках, форумах и мероприятиях за счёт уникальных конструкций и дизайнерских решений. Мы превращаем пространства в эффективный маркетинговый инструмент для вашего бренда.',
+                    'how_we_work': 'Как мы работаем быстрее?',
+                    'learn_more_2': 'Узнать подробнее',
+                    'stats_projects_return': '<strong>85%</strong> <span>проектов возвращаются с новыми задачами</span>',
+                    'stats_clients_recommend': '<strong>85%</strong> <span>клиентов приходят по рекомендации</span>',
+                    'learn_more_3': 'Узнать подробнее',
+                    'testimonials_title': 'Что говорят наши клиенты?',
+                    'testimonials_subtitle': 'Мы ценим доверие наших клиентов. Их отзывы — лучшее подтверждение качества нашей работы.',
+                    'testimonial1_author': 'Сарвар',
+                    'testimonial1_text': 'Мы работаем с “PARADOX” , более 3-х лет и сильно доверяем этой компании. Они разрабатывают лучшие дизайны и стенды. Поэтому мы 2 раза подряд побеждали в номинации “Лучший дизайн стенда”.',
+                    'testimonial2_author': 'Амал Шарипов',
+                    'testimonial2_text': 'Рекомендуем ХК “PARADOX-GROUP” как добросовестного партнёра и надежного поставщика.',
+                    'video_title': 'Ваш успех начинается с наших конструкций.',
+                    'video_subtitle': 'Expobox — пространство для сильных брендов.',
+                    'watch_video': 'Смотреть видео',
+                    'team_title': 'Наша команда профессионалов',
+                    'team_subtitle': 'В основе каждого успешного проекта стоят люди с опытом, знаниями и креативным мышлением. Наша команда специалистов помогает превращать ваши идеи в эффективные выставочные решения.',
+                    'team_member1_name': 'Гереев Урал',
+                    'team_member1_role': 'Директор',
+                    'team_member2_name': 'Насимбек Мухторов',
+                    'team_member2_role': 'Менеджер',
+                    'team_member3_name': 'Рамиль Гиззатуллин',
+                    'team_member3_role': 'Тех-дизайнер',
+                    'team_member4_name': 'Шукруллох Умар',
+                    'team_member4_role': 'Дизайнер',
+                    'cta_title': 'Начните и развивайте свой бизнес прямо сейчас.',
+                    'contact_now_2': 'Связаться сейчас',
+                    'address': 'Mukhtar Auezov 1, Bektemir District, Tashkent City, Uzbekistan',
+                    'footer_subscribe': 'Подписаться',
+                    'footer_top_services': 'ТОП услуги',
+                    'footer_service1': 'Дизайн, производство и монтаж выставочных стендов',
+                    'footer_service2': 'Аренда оборудования и мультимедиа',
+                    'footer_service3': 'Аренда мебели и аксессуаров для мероприятий',
+                    'footer_service4': 'Организация мероприятий "под ключ"',
+                    'footer_explore': 'Рассматривать',
+                    'footer_nav_contacts': 'Контакты',
+                    'footer_nav_team': 'Команда',
+                    'footer_nav_gallery': 'Фотогалерея',
+                    'footer_nav_testimonials': 'Отзывы',
+                    'footer_nav_about': 'О нас',
+                    'copyright': 'Copyright © 2025 <a href="https://paradox.uz" target="_blank" rel="noopener">Paradox.uz</a>. All rights reserved.'
+                },
+                'en': {
+                    'nav_home': 'Home',
+                    'nav_services': 'Services',
+                    'nav_about': 'About Us',
+                    'nav_team': 'Team',
+                    'nav_contacts': 'Contacts',
+                    'header_slogan': 'Bringing ideas to life with<br>smart design and construction',
+                    'hero_title': 'We work with major brands and international exhibitions. Over 85% of our clients come from recommendations — and that is our greatest pride.',
+                    'hero_subtitle1': 'At Expobox.uz, we design and create exhibition stands that visually convey your brand\'s idea.',
+                    'hero_subtitle2': 'Unique design, thoughtful details, and flawless execution — everything to make your brand speak for itself.',
+                    'contact_now': 'Contact now',
+                    'services_title': 'Our Key Services',
+                    'services_subtitle': 'We focus on four key services that are most in-demand among our clients. These include the manufacturing of exhibition stands, event decoration, production of advertising structures, and creation of decorative solutions.',
+                    'service1_title': 'Design, Production, and Installation of Exhibition Stands',
+                    'service1_item1': '- Development of custom 3D stand design projects',
+                    'service1_item2': '- Production of exhibition stands (from MDF, PVC, aluminum, and other materials)',
+                    'service1_item3': '- Assembly and disassembly of stands at the event venue',
+                    'service1_item4': '- Solutions for non-standard and complex stand structures',
+                    'service1_item5': '- Maintenance and technical support for stands during events',
+                    'service2_title': 'Rental of Furniture and Accessories for Events',
+                    'service2_item1': '- Tables, chairs, registration desks',
+                    'service2_item2': '- Bar counters, sofas, podiums, buffet areas',
+                    'service2_item3': '- Brochure stands, showcases, branded elements',
+                    'service2_item4': '- Floor coverings: carpets, podiums, platform stages',
+                    'service3_title': 'Rental of Equipment and Multimedia',
+                    'service3_item1': '- LED screens of various formats and sizes',
+                    'service3_item2': '- Interactive boards, touch screens, panels',
+                    'service3_item3': '- TVs, projectors, sound systems',
+                    'service3_item4': '- Lighting equipment (spots, LEDs, architectural lighting)',
+                    'service3_item5': '- Generators, power distributors, technical cables',
+                    'service4_title': 'Turnkey Event Organization',
+                    'service4_item1': '- Event planning and management',
+                    'service4_item2': '- Staff recruitment: hostesses, models, promoters',
+                    'service4_item3': '- Catering, coffee breaks, food organization',
+                    'service4_item4': '- Event scenarios, selection of speakers and hosts',
+                    'service4_item5': '- Design of photo zones, press walls, and branded areas',
+                    'about_us_label': 'About Us',
+                    'about_title': 'We create space that makes your brand stand out',
+                    'about_subtitle': 'We are confident that effective visual design helps a business speak louder. In every detail of our projects, there is creativity, precision, and practical benefit for the client.',
+                    'about_feature1_title': '10 years',
+                    'about_feature1_subtitle': 'in exhibition design',
+                    'about_feature1_text': 'We implement projects of any complexity, taking into account your goals.',
+                    'about_feature2_title': 'From idea to installation',
+                    'about_feature2_subtitle': '- all in one hands',
+                    'about_feature2_text': 'We design, produce, and install structures on a turnkey basis.',
+                    'learn_more': 'Learn more',
+                    'gallery_title': 'Our Implemented Projects',
+                    'gallery_subtitle': 'We develop and implement projects that help brands stand out at exhibitions, events, and in public spaces. Each project combines aesthetics, functionality, and your business objectives.',
+                    'ticker_design': 'Design',
+                    'ticker_stand_design': 'STAND DESIGN',
+                    'ticker_events': 'EVENTS',
+                    'ticker_ads': 'ADVERTISING',
+                    'ticker_media': 'MEDIA',
+                    'what_we_do_label': 'What We Do',
+                    'what_we_do_title': 'Design and structures that sell.',
+                    'what_we_do_subtitle': 'We help companies stand out at exhibitions, forums, and events through unique structures and design solutions. We turn spaces into an effective marketing tool for your brand.',
+                    'how_we_work': 'How do we work faster?',
+                    'learn_more_2': 'Learn more',
+                    'stats_projects_return': '<strong>85%</strong> <span>of projects return with new tasks</span>',
+                    'stats_clients_recommend': '<strong>85%</strong> <span>of clients come from recommendations</span>',
+                    'learn_more_3': 'Learn more',
+                    'testimonials_title': 'What Our Clients Say',
+                    'testimonials_subtitle': 'We value the trust of our clients. Their feedback is the best confirmation of the quality of our work.',
+                    'testimonial1_author': 'Sarvar',
+                    'testimonial1_text': 'We have been working with "PARADOX" for over 3 years and have great trust in this company. They develop the best designs and stands. That is why we have won the "Best Stand Design" award twice in a row.',
+                    'testimonial2_author': 'Amal Sharipov',
+                    'testimonial2_text': 'We recommend "PARADOX-GROUP" as a conscientious partner and a reliable supplier.',
+                    'video_title': 'Your success starts with our structures.',
+                    'video_subtitle': 'Expobox — a space for strong brands.',
+                    'watch_video': 'Watch Video',
+                    'team_title': 'Our Team of Professionals',
+                    'team_subtitle': 'Behind every successful project are people with experience, knowledge, and creative thinking. Our team of specialists helps turn your ideas into effective exhibition solutions.',
+                    'team_member1_name': 'Gereev Ural',
+                    'team_member1_role': 'Director',
+                    'team_member2_name': 'Nasimbek Mukhtorov',
+                    'team_member2_role': 'Manager',
+                    'team_member3_name': 'Ramil Gizzatullin',
+                    'team_member3_role': 'Technical Designer',
+                    'team_member4_name': 'Shukrullokh Umar',
+                    'team_member4_role': 'Designer',
+                    'cta_title': 'Start and grow your business right now.',
+                    'contact_now_2': 'Contact Now',
+                    'address': 'Mukhtar Auezov 1, Bektemir District, Tashkent City, Uzbekistan',
+                    'footer_subscribe': 'Subscribe',
+                    'footer_top_services': 'Top Services',
+                    'footer_service1': 'Design, production, and installation of exhibition stands',
+                    'footer_service2': 'Rental of equipment and multimedia',
+                    'footer_service3': 'Rental of furniture and accessories for events',
+                    'footer_service4': 'Turnkey event organization',
+                    'footer_explore': 'Explore',
+                    'footer_nav_contacts': 'Contacts',
+                    'footer_nav_team': 'Team',
+                    'footer_nav_gallery': 'Photo Gallery',
+                    'footer_nav_testimonials': 'Testimonials',
+                    'footer_nav_about': 'About Us',
+                    'copyright': 'Copyright © 2025 <a href="https://paradox.uz" target="_blank" rel="noopener">Paradox.uz</a>. All rights reserved.'
+                }
+            };
+
+            // 2. Функция для установки языка
+            const setLanguage = (lang) => {
+                $('[data-lang-key]').each(function() {
+                    const key = $(this).data('lang-key');
+                    const translation = translations[lang][key];
+                    if (translation !== undefined) {
+                        // Используем .html() вместо .text() чтобы теги <br> и <strong> работали
+                        $(this).html(translation);
+                    }
+                });
+
+                // Обновляем активное состояние кнопок
+                $('.lang-switcher').removeClass('active');
+                $('#lang-' + lang).addClass('active');
+
+                // Сохраняем выбор в localStorage
+                localStorage.setItem('language', lang);
+            };
+
+            // 3. Обработчики кликов по кнопкам
+            $('#lang-ru').on('click', () => setLanguage('ru'));
+            $('#lang-en').on('click', () => setLanguage('en'));
+
+            // 4. При загрузке страницы устанавливаем сохраненный язык или язык по умолчанию
+            const savedLang = localStorage.getItem('language') || 'ru'; // По умолчанию - русский
+            setLanguage(savedLang);
         });
         </script>
     </body>
